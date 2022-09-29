@@ -15,7 +15,11 @@ class Post(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
-
+    def get_absolute_url(self):
+        return reverse('home')
+    def save(self, *args, **kwargs):
+        super().save()
+        
     def __str__(self):
         return self.title
 

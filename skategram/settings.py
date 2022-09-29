@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'blog',
     'tinymce',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -155,3 +156,5 @@ CLOUDINARY_STORAGE = {
     'API_KEY': '683414431453265',
     'API_SECRET': '3anVzkjZpTMOY8W72RR93K29r0k'
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

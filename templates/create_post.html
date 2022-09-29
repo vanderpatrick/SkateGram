@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12 mx-auto " style="width: 33rem; background-color: grey;" id="border-patrick">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Please fill the content in to create a Post</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.title|as_crispy_field }}
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        {{ form.content|as_crispy_field }}
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.image|as_crispy_field }}
+                    </div>
+                    <div class="col-md-12 mt-3 p-3">
+                        <button class="btn btn-lg btn-block btn-outline-info" type="submit">Post</button>
+                    </div>
+                </div>
+                
+        </form>
+    </div>
+</div>
+{% endblock content %}
