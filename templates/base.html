@@ -51,7 +51,7 @@
                             <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'logout' %}">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="acme-font" href="#">Profile</a>
+                            <a class="nav-link" id="acme-font" href="{% url 'profile' %}">{{ user.username }} | Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="acme-font" href="{% url 'post-create' %}">Create a Post</a>
