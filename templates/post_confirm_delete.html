@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mx-auto mt-auto" id="border-patrick">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-12  text-center" id="color-patrick">Are you sure you want to delete
+                <strong>{{ object.title }}</strong> ?</div>
+            <div class="col-md-12 mt-3 mx-auto text-center"><img src="{{ object.image.url }}" class="img-fluid " id="border-patrick"
+                    alt="Wild Landscape" /></div>
+            <div class="col-md-12 text-center mt-3">
+                <a href="{% url 'post-edit' object.id %}" class="btn mb-3 mx-2 btn-outline-info">Edit</a>
+                <button class="btn mb-3 mx-2 btn-outline-danger" type="submit">Delete</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+{% endblock content %}
