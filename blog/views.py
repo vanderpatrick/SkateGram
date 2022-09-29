@@ -11,3 +11,10 @@ from tinymce import models as tinymce_models
 
 def landing(request):
     return render(request, 'landing.html')
+
+class PostListView(ListView):
+    model = Post
+    template_name = 'home.html'
+    context_object_name = 'posts'
+    ordering = ['-created_on']
+    paginate_by = 4

@@ -12,7 +12,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = CloudinaryField('image')
-    content = tinymce_models.HTMLField()
+    content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
 
@@ -31,7 +31,7 @@ class TutorialPost(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = CloudinaryField('image')
-    description = tinymce_models.HTMLField()
+    description = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
