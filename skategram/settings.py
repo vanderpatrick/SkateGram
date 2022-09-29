@@ -149,8 +149,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CLOUDINARY = {
-      'cloud_name': 'volendam',  
-      'api_key': '683414431453265',  
-      'api_secret': '3anVzkjZpTMOY8W72RR93K29r0k',
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'volendam',
+    'API_KEY': '683414431453265',
+    'API_SECRET': '3anVzkjZpTMOY8W72RR93K29r0k'
 }
