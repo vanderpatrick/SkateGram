@@ -9,6 +9,8 @@ body {
 #noto-font {
     font-family: 'Noto Sans Mono', monospace ,sans-serif;
     font-size: 1.1em;
+    color: white;
+
 }
 #colorwhite{
     color: white;
@@ -19,4 +21,8 @@ body {
 #border-patrick {
     border: grey 3px solid;
     border-radius: 22px;
+}
+
+#color-patrick {
+    color: white;
 }
