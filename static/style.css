@@ -10,3 +10,13 @@ body {
     font-family: 'Noto Sans Mono', monospace ,sans-serif;
     font-size: 1.1em;
 }
+#colorwhite{
+    color: white;
+    border: grey 2px solid;
+    border-radius: 22px;
+}
+
+#border-patrick {
+    border: grey 3px solid;
+    border-radius: 22px;
+}

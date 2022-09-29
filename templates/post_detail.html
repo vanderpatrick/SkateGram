@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cloudinary %}
+{% block content %}
+<div class="container ">
+    <div class="row">
+        <div class="col-md-12 mb-5 mx-1 ">
+            <img src="{{ detail.image.url }}" class="img-fluid" id="border-patrick" alt="Wild Landscape" />
+        </div>
+        <div class="row mb-5 mx-1" id="colorwhite">
+            <div class="col-md-12 ">
+                <p class="p-2 text-start" id="noto-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi, quod deserunt cum
+                    laudantium, soluta totam unde harum sed libero ullam cupiditate blanditiis cumque velit alias minima
+                    ut perferendis ducimus molestiae eveniet. Sequi aspernatur officiis in totam quis? Id ea doloremque
+                    delectus. Tenetur ipsam dolores et maiores quisquam, ducimus harum.</p>
+                <p id="noto-font" class="d-flex p-2">Created By | {{ detail.author }} At | {{ detail.created_on }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
