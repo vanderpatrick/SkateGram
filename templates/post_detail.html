@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load cloudinary %}
+{% load static %}
 {% block content %}
 <div class="container mx-auto">
     <div class="row text-center ">
@@ -20,7 +21,7 @@
                     {% if user.is_authenticated %}
                         {% if liked %}
 
-                        <button type="submit" name="post_id" value="{{ object.id }} "
+                        <button type="submit" onclick="play()" name="post_id" value="{{ object.id }} "
                             class="btn mb-3 mx-2 btn-outline-danger">unlike
                         </button> | {{ total_likes }}
                         {% else %}
@@ -44,4 +45,12 @@
         </div>
     </div>
 </div>
+<script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+  <audio id="audio" src="{% static 'memesong.mp3' %}"></audio>
 {% endblock content %}
