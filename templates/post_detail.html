@@ -34,13 +34,21 @@
                     {% else %}
                     <a href="{% url 'login' %}">Login to like</a>
                     {% endif %}
-                    
                     </form>
                 </p>
                 {% if detail.author == user %}
                 <a href="{% url 'post-edit' object.id %}" class="btn mb-3 mx-2 btn-outline-info">Edit</a>
                 <a href="{% url 'post-delete' object.id %}" class="btn mb-3 mx-2 btn-outline-danger">Delete</a>
                 {% endif %}
+                {% if not object.comments.all %}
+                no comments yet <a href="#">Post one</a>
+                {% else %}
+                {% for comment in object.comments.all %}
+                {{ comment.user }}
+                {{ comment.date }}
+                {{ comment.content }}
+                {% endfor %}
+                {%endif%}
             </div>
         </div>
     </div>
