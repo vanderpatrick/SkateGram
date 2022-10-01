@@ -8,13 +8,38 @@
         </div>
         <div class="row mb-5" id="colorwhite">
             <div class="col-md-12 ">
-                <p class="p-3 text-start" id="noto-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi, quod deserunt cum
+                <p class="p-3 text-start" id="noto-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    animi, quod deserunt cum
                     laudantium, soluta totam unde harum sed libero ullam cupiditate blanditiis cumque velit alias minima
                     ut perferendis ducimus molestiae eveniet. Sequi aspernatur officiis in totam quis? Id ea doloremque
                     delectus. Tenetur ipsam dolores et maiores quisquam, ducimus harum.</p>
-                <p id="noto-font" class=" p-3">Created By | {{ detail.author }} At | {{ detail.created_on }}</p>
+                <p id="noto-font" class=" p-3">Created By | {{ detail.author }} At | {{ detail.created_on }}
+                    
+                    <form action="{% url 'like_post' object.pk %}" method="POST">
+                        {% csrf_token %}
+                    {% if user.is_authenticated %}
+                        {% if liked %}
+
+                        <button type="submit" name="post_id" value="{{ object.id }} "
+                            class="btn mb-3 mx-2 btn-outline-danger">unlike
+                        </button> | {{ total_likes }}
+                        {% else %}
+
+                        <button type="submit" name="post_id" value="{{ object.id }} "
+                            class="btn mb-3 mx-2 btn-outline-info">like
+                        </button>
+                        | {{ total_likes }}
+                        {% endif %}
+                    {% else %}
+                    <a href="{% url 'login' %}">Login to like</a>
+                    {% endif %}
+                    
+                    </form>
+                </p>
+                {% if detail.author == user %}
                 <a href="{% url 'post-edit' object.id %}" class="btn mb-3 mx-2 btn-outline-info">Edit</a>
                 <a href="{% url 'post-delete' object.id %}" class="btn mb-3 mx-2 btn-outline-danger">Delete</a>
+                {% endif %}
             </div>
         </div>
     </div>

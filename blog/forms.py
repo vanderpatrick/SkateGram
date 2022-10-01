@@ -11,6 +11,12 @@ class UserRegister(UserCreationForm):
         fields = ['username', 'email', 'password1', 'password2']
 
     def clean(self):
+       username = self.cleaned_data.get('username')
+       if User.objects.filter(username=username).exists():
+            raise ValidationError("username exists")
+       return self.cleaned_data
+
+    def clean(self):
        email = self.cleaned_data.get('email')
        if User.objects.filter(email=email).exists():
             raise ValidationError("Email exists")
