@@ -5,10 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
 from .forms import UserRegister, UpdateUserProfile, UserUpadateForm, PostForm, CommentForm
-from tinymce import models as tinymce_models
 from django.http import HttpResponseRedirect
-from django.views.generic.detail import SingleObjectMixin
-from django.views.generic import FormView
 from django.urls import reverse_lazy, reverse
 # Create your views here.
 
@@ -147,3 +144,18 @@ def LikeView(request, pk):
     return HttpResponseRedirect(reverse('detail-post', args=[str(pk)]))
 
 
+class TutorialListView(ListView):
+    model = TutorialPost
+    template_name = 'tutorials.html'
+    context_object_name = 'tutorial'
+    ordering = ['-created_on']
+    paginate_by = 4
+
+
+class TutorialDetailView(DetailView):
+    model = TutorialPost
+    template_name = "tutorial_detail.html"
+    context_object_name = 'p'
+
+    
+    

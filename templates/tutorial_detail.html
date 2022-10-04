@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cloudinary %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container  mx-auto">
+    <div class="row text-center d-flex justify-content-center ">
+        <div class="col-md-12 mb-5">
+            <img src="{{ object.image.url }}" class="img-fluid" id="border-patrick" alt="Wild Landscape" />
+        </div>
+        <div class="row mb-5" id="colorwhite">
+            <div class="col-md-12 ">
+                <p class="p-3 text-start" id="noto-font">{{ object.description }}</p>
+                <p id="noto-font" class=" p-3"><strong>{{ object.title }}</strong> Created By | {{ object.author }} At |
+                    {{ object.created_on }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

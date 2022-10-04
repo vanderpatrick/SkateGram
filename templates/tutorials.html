@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% for t in tutorial %}
+<div class="card text-center mx-auto mt-4 mb-5    img-fluid" style="width: 33rem; background-color: grey;" id="border-patrick">
+    <img src="{{ t.image.url }}" class="card-img-top img-fluid " id="border-patrick" alt="...">
+    <div class="card-body" >
+        <h5 id="acme-font" class="card-title p-2">{{ t.title }} BY | {{ t.author }}</h5>
+        <div class="row">
+            <div class="col-md-7" >
+                <p id="noto-font"  class="card-text text-start mt-4 ">{{ t.created_on }}</p>
+            </div>
+            <div class="col-md-5 ">
+                <a id="acme-font" class="btn mt-1  hover btn-secondary" href="{% url 'tutorial-detail' t.id %}">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

@@ -5,13 +5,16 @@
         <form action="" method="POST" class="text-start p-4 my-4">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Welcome to skategram please fill the form to login</legend>
-                {{ form|crispy }}
+                <legend class="border-bottom mb-4 text-light">Welcome to skategram please fill the form to login</legend>
+                <div class="text-light ">
+
+                    {{ form|crispy }}
+                </div>
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info mt-4" type="submit">login</button>
             </div>
         </form>
-        <div class="border-top pt-3"><small class="text-muted">Dont have an account ? <a href="{% url 'register' %}" class="ml-2">sign up</a> </small></div>
+        <div class="border-top pt-3"><small class="text-muted ">Dont have an account ? <a href="{% url 'register' %}" class="ml-2">sign up</a> </small></div>
     </div>
 {% endblock content %}

@@ -8,7 +8,11 @@
           <div class="card mb-4 p-2" style="border-radius: .5rem;">
             <div class="row g-0">
               <div class="col-md-4 text-center text-white">
+                {% if not user.profile.img.url %}
+                <img style="height: 60%;" class="img-fluid my-5  rounded" src="https://res.cloudinary.com/volendam/image/upload/v1663526963/tsgvlrz1ews9u371xyfj.jpg" alt="">
+                {% else %}
                 <img src="{{ user.profile.image.url }}" alt="Avatar" style="height: 60%;" class="img-fluid my-5  rounded"/>
+                {% endif %}
               </div>
               <div class="col-md-8">
                 <div class="card-body p-4">
