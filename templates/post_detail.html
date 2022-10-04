@@ -32,6 +32,7 @@
                         {% endif %}
                         {% endif %}
                     </form>
+                    <hr>
                 </p>
                 {% if detail.author == user %}
                 <a href="{% url 'post-edit' object.id %}" class="btn mb-3 mx-2 btn-outline-info">Edit</a>
@@ -53,19 +54,7 @@
             {% endfor %}
             {%endif%}
             <h3 class="text-center">Add a Comment</h3>
-            {% if user.is_authenticated %}
-            <form method="POST">
-                {% csrf_token %}
-                <div class="form-group">
-                    {{ comment_form|crispy }}
-                    <button class="btn btn-info mt-5" type="submit">Add comment <i class="fas fa-comments"></i></button>
-                </div>
-            </form>
-            {% endif %}
-            </form>
-        </div>
-        <div class="col-md-12 mb-5 p-3 mt-2 text-start" id="colorwhite">
-            <h3 class="text-center">Add a Comment</h3>
+            <hr>
             {% if user.is_authenticated %}
             <form method="POST">
                 {% csrf_token %}
@@ -79,28 +68,29 @@
         </div>
     </div>
     <div>
-        {{ detail.author.profile.user }}
     </div>
 </div>
 {% else %}
 <div class="container">
     <div class="col-md-12">
-        <p class="text-light">Like why ? Honestly bro im getting sad now can you please register or login already just click the button bro</p>
+        <p class="text-light">Like why ? Honestly bro im getting sad now can you please register or login already just
+            click the button bro</p>
         <input type="button" class="btn btn-outline-info" value="register here bro" onclick="play(); changeText()">
         <p class="text-light" id="text1"></p>
     </div>
 </div>
 <script>
-    function changeText(){
+    function changeText() {
         let text = document.getElementById("text1")
         text.textContent = 'Yeah get snored'
     }
-    function play() {
-      var audio = document.getElementById("audio");
-      audio.play();
-    }
-  </script>
 
-  <audio id="audio" src="{% static 'memesong.mp3' %}"></audio>
+    function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+</script>
+
+<audio id="audio" src="{% static 'memesong.mp3' %}"></audio>
 {%endif%}
 {% endblock content %}
