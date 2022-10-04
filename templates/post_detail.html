@@ -29,8 +29,6 @@
                         </button>
                         | {{ total_likes }}
                         {% endif %}
-                        {% else %}
-                        <a href="{% url 'login' %}">Login to like</a>
                         {% endif %}
                     </form>
                 </p>
@@ -43,7 +41,7 @@
         </div>
         <div class="col-md-12 mb-5 p-3 mt-2 text-start" id="colorwhite">
             {% if not object.comments.all %}
-            no comments yet <a href="#">Post one</a>
+            <p><strong>No comments yet be the first brother</strong></p>
             {% else %}
             {% for comment in object.comments.all %}
             <div class="pt-2">

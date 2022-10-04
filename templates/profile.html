@@ -3,38 +3,42 @@
 {% block content %}
   <section class="mb-5" style="background-color: #f4f5f7;">
     <div class="container-fluid   ">
-      <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="row pt-3">
         <div class="col col-lg-6 mb-4 mb-lg-0">
           <div class="card mb-4 p-2" style="border-radius: .5rem;">
             <div class="row g-0">
-              <div class="col-md-4 text-center text-white">
-                {% if not user.profile.img.url %}
-                <img style="height: 60%;" class="img-fluid my-5  rounded" src="https://res.cloudinary.com/volendam/image/upload/v1663526963/tsgvlrz1ews9u371xyfj.jpg" alt="">
+              <div class="col-md-12 text-center mx-auto text-white">
+                {% if "placeholder" in user.profile.image.url %}
+                <img src="https://res.cloudinary.com/volendam/image/upload/v1661950287/bnxrnmc9lqxaxymls1q3.jpg" alt="Avatar" style="height: 60%;" class="img-fluid my-5 mx-auto  rounded"/>
                 {% else %}
-                <img src="{{ user.profile.image.url }}" alt="Avatar" style="height: 60%;" class="img-fluid my-5  rounded"/>
+                <img src="{{ user.profile.image.url }}" alt="Avatar" class="img-fluid my-5  rounded"/>
                 {% endif %}
               </div>
-              <div class="col-md-8">
-                <div class="card-body p-4">
-                  <h6>Information</h6>
+              <div class="col-md-12">
+                <div class="card-body p-4" id="test">
+                  <h6 id="test">Information</h6>
                   <hr class="mt-0 mb-4">
                   <div class="row pt-1">
-                    <div class="col-6 mb-3">
+                    <div class="col-md-7 mb-3">
                       <h6>Email</h6>
-                      <p class="text-muted">{{ user.email }}</p>
+                      <p class="text-muted ">{{ user.email }}</p>
                     </div>
-                    <div class="col-6 mb-3">
+                    <div class="col-md-6 mb-3">
                       <h6>Username</h6>
                       <p class="text-muted">{{ user.username }}</p>
                     </div>
                   </div>
                   <hr class="mt-0 mb-4">
                   <div class="row pt-1">
-                    <div class="col-6 mb-3">
+                    <div class="col-md-5 mb-3">
                       <h6>Description</h6>
-                      <p class="text-muted">{{ user.profile.description }}</p>
+                      {% if "placeholder" in user.profile.description %}
+                      <p class="text-muted" id="test">Hi im a good skater nad ill will respect the crew</p>
+                      {% else %}
+                      <p class="text-muted" id="test">{{ user.profile.description }}</p>
+                      {% endif %}
                     </div>
-                    <div class="col-6 mb-3">
+                    <div class="col-md-6 mb-3">
                       <h6>Created On</h6>
                       <p class="text-muted">{{ user.profile.created_on }}</p>
                     </div>
@@ -47,13 +51,13 @@
         <div class="col-md-6">
           <form action="" method="POST" class="text-start p-4 my-2" enctype="multipart/form-data">
             {% csrf_token %}
-            <fieldset class="form-group">
+            <fieldset >
               <legend class="border-bottom mb-4">Update Profile</legend>
               {{ u_form|crispy }}
               {{ p_form|crispy }}
             </fieldset>
-            <div class="form-group">
-              <button class="btn btn-outline-info mb-2 p-2" type="submit">Update</button>
+            <div>
+              <button class="btn btn-outline-info mt-2 p-2" type="submit">Update</button>
             </div>
           </form>
         </div>

@@ -11,7 +11,7 @@ from tinymce import models as tinymce_models
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    image = CloudinaryField('image')
+    image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     likes = models.ManyToManyField(User, related_name='blog_posts')
@@ -31,7 +31,7 @@ class Post(models.Model):
 
 class TutorialPost(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    image = CloudinaryField('image')
+    image = CloudinaryField('image' )
     description = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
@@ -43,8 +43,8 @@ class TutorialPost(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = CloudinaryField('image', default='https://res.cloudinary.com/volendam/image/upload/v1663526963/tsgvlrz1ews9u371xyfj.jpg')
-    description = models.TextField()
+    image = CloudinaryField('image', default='placeholder')
+    description = models.TextField(default='placeholder')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):

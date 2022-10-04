@@ -59,7 +59,7 @@
                         </li>
                     </ul>
                     {% else %}
-                    <a class="navbar-brand" id="acme-font" href="#">Skategram</a>
+                    <a class="navbar-brand" id="acme-font" href="{% url 'landing' %}">Skategram</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
                             <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'landing' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="acme-font" href="landing">Tutorial Posts</a>
+                            <a class="nav-link" id="acme-font" href="{% url 'landing' %}">Tutorial Posts</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto m-2">
