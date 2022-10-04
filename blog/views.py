@@ -15,7 +15,6 @@ from .forms import (
     UserRegister,
     UpdateUserProfile,
     UserUpadateForm,
-    PostForm,
     CommentForm,
 )
 from django.http import HttpResponseRedirect
@@ -23,9 +22,13 @@ from django.urls import reverse_lazy, reverse
 
 # Create your views here.
 
+# View to redirect user to landing page
+
 
 def landing(request):
     return render(request, "landing.html")
+
+# list of all posts in the application
 
 
 class PostListView(ListView):
@@ -34,6 +37,8 @@ class PostListView(ListView):
     context_object_name = "posts"
     ordering = ["-created_on"]
     paginate_by = 4
+
+# details of an specific post
 
 
 class PostDetailView(DetailView):
@@ -68,6 +73,8 @@ class PostDetailView(DetailView):
         new_comment.save()
         return HttpResponseRedirect(reverse("detail-post", args=[str(pk)]))
 
+# Post creation
+
 
 class CreatePostView(LoginRequiredMixin, CreateView):
     model = Post
@@ -78,6 +85,8 @@ class CreatePostView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+# View for edition of posts if user is authenticated
 
 
 class EditPostView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
@@ -97,6 +106,8 @@ class EditPostView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         else:
             return False
 
+# Post deletion
+
 
 class DeletePostView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Post
@@ -109,6 +120,8 @@ class DeletePostView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         else:
             return False
+
+# Acconut registration
 
 
 def register(request):
@@ -124,6 +137,8 @@ def register(request):
     else:
         form = UserRegister()
     return render(request, "register.html", {"form": form})
+
+# Profile Registration
 
 
 @login_required
@@ -145,6 +160,8 @@ def profile(request):
 
     return render(request, "profile.html", context)
 
+# liking system
+
 
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get("post_id"))
@@ -157,6 +174,8 @@ def LikeView(request, pk):
         liked = True
     return HttpResponseRedirect(reverse("detail-post", args=[str(pk)]))
 
+# List of all tutorials in the application
+
 
 class TutorialListView(ListView):
     model = TutorialPost
@@ -164,6 +183,8 @@ class TutorialListView(ListView):
     context_object_name = "tutorial"
     ordering = ["-created_on"]
     paginate_by = 4
+
+# Details of tutorial posts
 
 
 class TutorialDetailView(DetailView):

@@ -5,6 +5,9 @@ from .models import Profile, Post, Comment
 from django.core.exceptions import ValidationError
 
 
+# Form for user registration
+
+
 class UserRegister(UserCreationForm):
     email = forms.EmailField()
 
@@ -24,6 +27,8 @@ class UserRegister(UserCreationForm):
             raise ValidationError("Email exists")
         return self.cleaned_data
 
+# User/profile update forms
+
 
 class UserUpadateForm(forms.ModelForm):
     class Meta:
@@ -36,11 +41,7 @@ class UpdateUserProfile(forms.ModelForm):
         model = Profile
         fields = ["image", "description"]
 
-
-class PostForm(forms.ModelForm):
-    class Meta:
-        model = Post
-        fields = ["image", "title", "content"]
+# Form for users to comment
 
 
 class CommentForm(forms.ModelForm):

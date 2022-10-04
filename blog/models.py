@@ -9,6 +9,9 @@ from tinymce import models as tinymce_models
 # Create your models here.
 
 
+# Model to handle Post databases structure
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -29,6 +32,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+# Model to handle Tutorial Post databases structure
+
 
 class TutorialPost(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -42,6 +47,8 @@ class TutorialPost(models.Model):
     def __str__(self):
         return self.title
 
+# Model to handle user Profile
+
 
 class Profile(models.Model):
     user = models.OneToOneField(
@@ -52,6 +59,8 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.user.username} profile"
+
+# Model to handle comments from authenticated users
 
 
 class Comment(models.Model):

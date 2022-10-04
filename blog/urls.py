@@ -13,7 +13,7 @@ from .views import (
     TutorialDetailView,
 )
 
-
+# All url path from the application
 urlpatterns = [
     path("", views.landing, name="landing"),
     path("home/", PostListView.as_view(), name="home"),
