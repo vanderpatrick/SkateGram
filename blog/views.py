@@ -2,6 +2,7 @@ from .models import Post, TutorialPost, Profile, Comment
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.views.generic import (
     ListView,
     DetailView,
@@ -46,7 +47,6 @@ class PostDetailView(DetailView):
         total = get_object_or_404(Post, id=self.kwargs["pk"])
         total_likes = total.total_likes()
         post = Comment.objects.all().order_by("-date")
-
         context["comments"] = post
 
         if self.request.user.is_authenticated:

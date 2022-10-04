@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skategram</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+Mono:wght@300&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
@@ -41,7 +41,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link active" id="acme-font" aria-current="page"
+                                href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="acme-font" href="{% url 'tutorial' %}">Tutorial Posts</a>
@@ -49,10 +50,12 @@
                     </ul>
                     <ul class="navbar-nav ms-auto m-2">
                         <li class="nav-item">
-                            <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'logout' %}">Logout</a>
+                            <a class="nav-link active" id="acme-font" aria-current="page"
+                                href="{% url 'logout' %}">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="acme-font" href="{% url 'profile' %}">{{ user.username }} | Profile</a>
+                            <a class="nav-link" id="acme-font" href="{% url 'profile' %}">{{ user.username }} |
+                                Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="acme-font" href="{% url 'post-create' %}">Create a Post</a>
@@ -60,39 +63,51 @@
                     </ul>
                     {% else %}
                     <a class="navbar-brand" id="acme-font" href="{% url 'landing' %}">Skategram</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'landing' %}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="acme-font" href="{% url 'landing' %}">Tutorial Posts</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto m-2">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="acme-font" aria-current="page" href="{% url 'login' %}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="acme-font" href="{% url 'register'%}">Register</a>
-                        </li>
-                    </ul>
-                    {% endif %}
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="acme-font" aria-current="page"
+                                    href="{% url 'landing' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="acme-font" href="{% url 'landing' %}">Tutorial Posts</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto m-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="acme-font" aria-current="page"
+                                    href="{% url 'login' %}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="acme-font" href="{% url 'register'%}">Register</a>
+                            </li>
+                        </ul>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
         </nav>
     </header>
     <!-- Main Content containing all posts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags}} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     <main>
         <div class="row  mx-auto container-fluid mt-auto">
-            <div class="col-md-12 mt-auto ">
-                <div class="alert alert-">
-                </div>
+            <div class="col-md-12 mt-auto">
                 {% block content %}{% endblock %}
             </div>
 
@@ -112,11 +127,15 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <h5 class="text-uppercase">Social Medias :</h5>
                         <ul class="list-unstyled">
-                            <li >
-                                <a href="https://github.com/vanderpatrick" target="_blank" class="text-white mx-1"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/patrick-alexander-lucas-van-der-flier-a8bb1621b/" target="_blank" class="text-white mx-1"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://www.facebook.com/patrick.alexander.167/" target="_blank" class="text-white mx-1"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/trick_alexander/" target="_blank" class="text-white mx-1"><i class="fa-brands fa-instagram"></i></a>
+                            <li>
+                                <a href="https://github.com/vanderpatrick" target="_blank" class="text-white mx-1"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/patrick-alexander-lucas-van-der-flier-a8bb1621b/"
+                                    target="_blank" class="text-white mx-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/patrick.alexander.167/" target="_blank"
+                                    class="text-white mx-1"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/trick_alexander/" target="_blank"
+                                    class="text-white mx-1"><i class="fa-brands fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -144,6 +163,13 @@
             </div>
         </footer>
     </div>
+    <script>
+        function remove(){
+            let r = document.getElementById("msg");
+            r.remove();
+        }
+        setTimeout(remove, 2000);
+    </script>
 </body>
 
 </html>

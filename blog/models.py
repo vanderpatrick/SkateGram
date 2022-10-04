@@ -44,7 +44,8 @@ class TutorialPost(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE)
     image = CloudinaryField("image", default="placeholder")
     description = models.TextField(default="placeholder")
     created_on = models.DateTimeField(auto_now_add=True, null=True)
