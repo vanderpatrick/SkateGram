@@ -26,3 +26,9 @@ body {
 #color-patrick {
     color: white;
 }
+
+#border-bottom {
+    color: black;
+    border-bottom: 2px solid gray;
+    padding-top: 20px;
+}

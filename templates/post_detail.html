@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% load cloudinary %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
-<div class="container mx-auto">
-    <div class="row text-center ">
-        <div class="col-md-12 mb-5 ">
+<div class="container  mx-auto">
+    <div class="row text-center d-flex justify-content-center ">
+        <div class="col-md-12 mb-5">
             <img src="{{ detail.image.url }}" class="img-fluid" id="border-patrick" alt="Wild Landscape" />
         </div>
         <div class="row mb-5" id="colorwhite">
@@ -14,14 +15,15 @@
                     laudantium, soluta totam unde harum sed libero ullam cupiditate blanditiis cumque velit alias minima
                     ut perferendis ducimus molestiae eveniet. Sequi aspernatur officiis in totam quis? Id ea doloremque
                     delectus. Tenetur ipsam dolores et maiores quisquam, ducimus harum.</p>
-                <p id="noto-font" class=" p-3">Created By | {{ detail.author }} At | {{ detail.created_on }}
-                    
+                <p id="noto-font" class=" p-3"><strong>{{ detail.title }}</strong> Created By | {{ detail.author }} At |
+                    {{ detail.created_on }}
+
                     <form action="{% url 'like_post' object.pk %}" method="POST">
                         {% csrf_token %}
-                    {% if user.is_authenticated %}
+                        {% if user.is_authenticated %}
                         {% if liked %}
 
-                        <button type="submit"  name="post_id" value="{{ object.id }} "
+                        <button type="submit" name="post_id" value="{{ object.id }} "
                             class="btn mb-3 mx-2 btn-outline-danger">unlike
                         </button> | {{ total_likes }}
                         {% else %}
@@ -31,25 +33,44 @@
                         </button>
                         | {{ total_likes }}
                         {% endif %}
-                    {% else %}
-                    <a href="{% url 'login' %}">Login to like</a>
-                    {% endif %}
+                        {% else %}
+                        <a href="{% url 'login' %}">Login to like</a>
+                        {% endif %}
                     </form>
                 </p>
                 {% if detail.author == user %}
                 <a href="{% url 'post-edit' object.id %}" class="btn mb-3 mx-2 btn-outline-info">Edit</a>
                 <a href="{% url 'post-delete' object.id %}" class="btn mb-3 mx-2 btn-outline-danger">Delete</a>
                 {% endif %}
-                {% if not object.comments.all %}
-                no comments yet <a href="#">Post one</a>
-                {% else %}
-                {% for comment in object.comments.all %}
-                {{ comment.user }}
-                {{ comment.date }}
-                {{ comment.content }}
-                {% endfor %}
-                {%endif%}
+
             </div>
+        </div>
+        <div class="col-md-12 mb-5 p-3 mt-2 text-start" id="colorwhite">
+            {% if not object.comments.all %}
+            no comments yet <a href="#">Post one</a>
+            {% else %}
+            {% for comment in object.comments.all %}
+            <div class="pt-2">
+                {{ comment.user }} |
+                {{ comment.date }} :
+            </div>
+            <strong>{{ comment.content }}</strong>
+            {% endfor %}
+            {%endif%}
+        </div>
+        <div class="col-md-12 mb-5 p-3 mt-2 text-start" id="colorwhite">
+            <h3 class="text-center">Add a Comment</h3>
+            {% if user.is_authenticated %}
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ comment_form|crispy }}
+                    <button class="btn btn-info mt-5" type="submit">Add comment <i class="fas fa-comments"></i></button>
+                </div>
+            </form>
+            {% endif %}
+
+            </form>
         </div>
     </div>
 </div>

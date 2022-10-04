@@ -27,6 +27,9 @@ class Post(models.Model):
         
     def __str__(self):
         return self.title
+    @property
+    def number_of_comments(self):
+        return BlogComment.objects.filter(blogpost_connected=self).count()
 
 class TutorialPost(models.Model):
     title = models.CharField(max_length=200, unique=True)

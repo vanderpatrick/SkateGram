@@ -4,9 +4,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.decorators import login_required 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
-from .forms import UserRegister, UpdateUserProfile, UserUpadateForm, PostForm
+from .forms import UserRegister, UpdateUserProfile, UserUpadateForm, PostForm, CommentForm
 from tinymce import models as tinymce_models
 from django.http import HttpResponseRedirect
+from django.views.generic.detail import SingleObjectMixin
+from django.views.generic import FormView
 from django.urls import reverse_lazy, reverse
 # Create your views here.
 
@@ -37,10 +39,27 @@ class PostDetailView(DetailView):
         liked = False
         if total.likes.filter(id=self.request.user.id).exists():
             liked = True
-
         context['total_likes'] = total_likes
         context['liked'] = liked
         return context
+
+
+    def get_context_data(self, **kwargs):  
+        data = super().get_context_data(**kwargs)
+        post = Comment.objects.filter(
+            post=self.get_object()).order_by('-date')
+        data['comments'] = post
+        if self.request.user.is_authenticated:
+            data['comment_form'] = CommentForm(instance=self.request.user)
+
+        return data
+
+    def post(self, request, *args, **kwargs):
+        new_comment = Comment(content=request.POST.get('content'),
+                                  user=self.request.user,
+                                  post=self.get_object())
+        new_comment.save()
+        return self.get(self, request, *args, **kwargs)
 
 
 class CreatePostView(LoginRequiredMixin, CreateView):
@@ -130,3 +149,5 @@ def LikeView(request, pk):
         post.likes.add(request.user)
         liked = True
     return HttpResponseRedirect(reverse('detail-post', args=[str(pk)]))
+
+
