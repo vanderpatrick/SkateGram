@@ -3,6 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
+{% if user.is_authenticated %}
 <div class="container  mx-auto">
     <div class="row text-center d-flex justify-content-center ">
         <div class="col-md-12 mb-5">
@@ -67,4 +68,25 @@
         </div>
     </div>
 </div>
+{% else %}
+<div class="container">
+    <div class="col-md-12">
+        <p class="text-light">Like why ? Honestly bro im getting sad now can you please register or login already just click the button bro</p>
+        <input type="button" class="btn btn-outline-info" value="register here bro" onclick="play(); changeText()">
+        <p class="text-light" id="text1"></p>
+    </div>
+</div>
+<script>
+    function changeText(){
+        let text = document.getElementById("text1")
+        text.textContent = 'Yeah get snored'
+    }
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+  <audio id="audio" src="{% static 'memesong.mp3' %}"></audio>
+{%endif%}
 {% endblock content %}

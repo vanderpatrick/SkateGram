@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+{% if user.is_authenticated %}
 {% for t in tutorial %}
 <div class="card text-center mx-auto mt-4 mb-5    img-fluid" style="width: 33rem; background-color: grey;" id="border-patrick">
     <img src="{{ t.image.url }}" class="card-img-top img-fluid " id="border-patrick" alt="...">
@@ -18,5 +18,11 @@
     </div>
 </div>
 {% endfor %}
-
+{% else %}
+<div class="container">
+    <div class="col-md-12">
+        <p class="text-light">Like again ? why bro ? why would you try it again just like register bro </p>
+    </div>
+</div>
+{%endif%}
 {% endblock content %}
