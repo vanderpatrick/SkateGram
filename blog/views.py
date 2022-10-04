@@ -35,6 +35,12 @@ class PostDetailView(DetailView):
         context = super(PostDetailView, self).get_context_data()
         total = get_object_or_404(Post, id=self.kwargs['pk'])
         total_likes = total.total_likes()
+        post = Comment.objects.all().order_by('-date')
+
+        context['comments'] = post
+
+        if self.request.user.is_authenticated:
+            context['comment_form'] = CommentForm(instance=self.request.user)
 
         liked = False
         if total.likes.filter(id=self.request.user.id).exists():
@@ -43,23 +49,13 @@ class PostDetailView(DetailView):
         context['liked'] = liked
         return context
 
-
-    def get_context_data(self, **kwargs):  
-        data = super().get_context_data(**kwargs)
-        post = Comment.objects.filter(
-            post=self.get_object()).order_by('-date')
-        data['comments'] = post
-        if self.request.user.is_authenticated:
-            data['comment_form'] = CommentForm(instance=self.request.user)
-
-        return data
-
-    def post(self, request, *args, **kwargs):
+    def post(self, request, pk, *args, **kwargs):
         new_comment = Comment(content=request.POST.get('content'),
                                   user=self.request.user,
                                   post=self.get_object())
         new_comment.save()
-        return self.get(self, request, *args, **kwargs)
+        return HttpResponseRedirect(reverse('detail-post', args=[str(pk)]))
+
 
 
 class CreatePostView(LoginRequiredMixin, CreateView):
