@@ -21,7 +21,7 @@
                     {% if user.is_authenticated %}
                         {% if liked %}
 
-                        <button type="submit" onclick="play()" name="post_id" value="{{ object.id }} "
+                        <button type="submit"  name="post_id" value="{{ object.id }} "
                             class="btn mb-3 mx-2 btn-outline-danger">unlike
                         </button> | {{ total_likes }}
                         {% else %}
@@ -53,15 +53,4 @@
         </div>
     </div>
 </div>
-<button type="submit" onclick="play()" name="post_id" value="{{ object.id }} "
-                            class="btn mb-3 mx-2 btn-outline-danger">unlike
-                        </button>
-<script>
-    function play() {
-      var audio = document.getElementById("audio");
-      audio.play();
-    }
-  </script>
-
-  <audio id="audio" src="https://res.cloudinary.com/volendam/video/upload/v1664620564/memesong_dzacbp.mp3"></audio>
 {% endblock content %}
