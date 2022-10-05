@@ -1,108 +1,190 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SkateGram
 
-Welcome vanderpatrick,
+## By Patrick Alexander Lucas Van Der Flier
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### [Check SkateGram](https://vanderpatrick.github.io/The-Amazing-Quizaru/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive image from the project](/assets/images/responsive.png)
 
-## Gitpod Reminders
+# SkateGram :
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### SkateGram was developed as my fourth project for CodeInstitute
 
-`python3 -m http.server`
+# Reason :
+As a skateboarder i always been part of the skate comunity. Beeing part of a skate community means support and sharing, we always help eachother teaching tricks giving tips etc... One of the main things that i saw was the dependenci of social media platforms for this (Support/Sharing) experience, but it gets overwelming with the amount of different subjects in such platforms hence the birth of skategram. an skate social media blog where people can share their thoughts about the skate universe as well as following tutorials regarding skateboarding.
 
-A blue button should appear to click: _Make Public_,
+# The user Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+##  Audience : 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- People who want to engage more into skateboarding.
+- Skaters that want to discuss about major skate topics.
+- skaters who wish to share their thoughts about skating in different topics.
 
-A blue button should appear to click: _Make Public_,
+## User Report : 
 
-Another blue button should appear to click: _Open Browser_.
+- first experience
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    1. As a user I would like easy navigation across the web application.
+    2. As a user I would like access to an skate social media.
+    3. As a user I would like to share my thoughts with other users in an dinamic way.
 
-To log into the Heroku toolbelt CLI:
+- Second experience
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    1. I would want to check my post for likes and comments.
+    2. I would want to edit posts and profile.
+    3. I would want to check for new subjects to discuss about.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- As a developer    
+    
+    1. I want to make it interactive.
+    2. I want the site to be easy to fulfill basic forms such registration, post, login. 
+    3. I want to give a focused blog about skateboarding so skaters fell more confortable with their own kind.
 
-------
 
-## Release History
+# Features :
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The Features were designed to distinguish each area with ease so the user can explore the site instinctively.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Navigation bar
+    - The navigation bar is featured on all HTML pages using the extend method from django.
+    - It consists of intuitive links that tells you precisesly what you can do in the application. 
+    - as it shrinks the navigations becomes the brand title and an burger menu.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+ ![navigation bar image](/assets/images/nav_bar.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Landing page
+    - The homepage consists of an welcome message with options of register/login for new and old users.
+    - it is easy to look at and intuitive to chose what to do.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![landing page image](/assets/images/home_screen.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Footer
+    - The footer is responsible for giving information about the developing of the application and contact info about the develeopemnt team.
+    
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![info content image](/assets/images/footer.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Home section
+    - Simple homepage for registrated users to access the blog content witch consists of a list of the most recent blog posts
+    - The user cannot access teh content of the blog whitout beeing registrated, defensive code was applied in all content pages.
+    - After the user becomes registrated he is allowd to log in and see the contents of the application.
+    - Pagination system that allows users to navigate to older posts.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![feedback info image](/assets/images/quiz_options.png)
+![Quiz when wrong question is clicked](/assets/images/quiz_options.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Post Creation
+    - The user is allowd after becoming registered to create a post that consist of an unique title, a post image and the contents of the post.
+    - After submiting the users is redirected to the home page with his post as the first one.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Footer image](/assets/images/quiz_result.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Post detail
+    - From the home page the user is able to click on a post of his choice.
+    - There the user can read the content of the post, like the post unlike the post and or comment the post.
+    - If the user is the owner of the post he is allowed to choose between deleting and editign the post 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Post Deletion
+    - The user is allowed if authenticated to delete his own post
+    
+- Log in 
+    - The user after registration is ablle to Fill in a form to login in the blog
+   
+- registration
+    - The user fills in a registration form that authomaticly creates a profile for such user
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Profile
+    - user can check and edit his profile info
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Testing :
 
-------
+This is an HTML CSS and JS website, my main concern in the project was the logic applied to the quiz.
 
-## FAQ about the uptime script
+ - The project was built with a desktop approach Because it was easier for me to create the content on the page.
 
-**Why have you added this script?**
+ - It was hard to fix the Js bugs in all HTML pages. But in the end it passed all tests.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ # Test Validators :
 
-**How will this affect me?**
+## Here you have access to all HTML validators from all 5 pages:
+ 
+ ## [HTML Validator - Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Findex.html)
+ ## [HTML Validator - Quiz_box](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fquiz_box.html#textarea)
+ ## [HTML Validator - Help](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fhelp.html#textarea)
+ ## [HTML Validator - Credits](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html)
+ ## [HTML Validator - Result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+All Html pages have been tested and passed with success with irrelevant warnings.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+ ## [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+ - For responsiveness, this project was tested in the desktop level, laptops, tablets(iPad), telephones, all screen sizes have shown responsiveness
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The CSS file has been tested and passed with success.
 
-**So….?**
+## JavaScript Validator :
+- The code was tested numerous times and didn't show any major bugs in the final code.
+- The undefinable variables are objects from an array.
+- Since the game is in an different HTML the function "runGame" cannot be called.
+![JavaScript Validator](/assets/images/js_validator.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Bugs
+- The main bug that I had at the super frustrating beginning was calling the function, somehow even when the function was done it wasn't called, by simply calling the function at the end of the script fixed my problem.
+- Since the game is in a different HTML the function "runGame" cannot be called in any other HTML file besides the game.
 
-**Can I opt out?**
+## LigthHouse
+- Unfortunately, I saw it too late that existed the light house function at dev tools, which would have helped me choose a better combination of colors.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![JavaScript Validator](/assets/images/light_house.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+# Deployment :
+ ## Remote Deployment :
+  - In the GitHub repository go to settings.
+  ![image of the settings location](assets/images/settings.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  - In the settings tab click the page button.
+  ![Image of the page's location](assets/images/pages.png)
 
----
+  - Change the none button to the main.
+  ![image of the "main" button location](/assets/images/branch.png)
+  
+  - Click save and then check your link URL.
+  ![image of the project URL link](/assets/images/result.png)
 
-Happy coding!
+## How to fork :
+  - In the repository that you want to fork, go to the right upper corner and click fork.
+  ![image of location from fork](/assets/images/how_to_fork.png)
+  - After "forking" wait while GitHub copies the repository into your profile.
+  
+## Desktop Deployment :
+  - In the repository click on code.
+  ![image of location from fork](/assets/images/desktop_deploy.png)
+  - Click at download zip file.
+  ![image of location from fork](/assets/images/desktop_deploy_part_1.png)
+  - When that is done, open with your chosen code program. 
+
+  # External Features :
+  ### In the links below, you will find all the icons and fonts used in the project. 
+
+- [Google Fonts](https://fonts.google.com/)
+  - Was used to select the font combination for this project.
+- [Font Awesome](https://fontawesome.com/)
+  - Was used to select the icons used in this project. 
+
+  # Credits :
+ 1. [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
+  - For helping me again with my nav bar.
+
+ 2. [CodingNepal](https://www.youtube.com/c/CodingNepal/featured)
+  - CodingNepal was my stepping stone to make this quiz project.
+  
+ 3.  [Code Institute](https://codeinstitute.net/)
+  - Code Institute for all the suporte and care with me and my projects.
+
+  ## Special thanks 
+  I would like to thank everyone who helped me with this project.
+
+- My mentor.
+- Jean my good French friend for all the support and advice.
+- Code Institute for giving the best support to develop this project.
