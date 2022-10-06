@@ -136,15 +136,15 @@ This is a Full stack Framework project using Django
     - After filling the user credentials he is allowd to see the application content
     - Before
 
- ![navigation bar image](/static/images/test-login.png)
-  
+ ![navigation bar image](/static/images/test-login.png
   - After
+  - the username followed by the profile confirms that the user is logged in
 
  ![navigation bar image](/static/images/test-login-pass.png)
 
 
 - Profile
-    - The profile is imidiattly created with the account registration. Pretty neat if you ask me 
+    - The profile is imidiattly created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description
     - Before
 
  ![navigation bar image](/static/images/test-profile.png)
