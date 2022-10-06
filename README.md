@@ -235,7 +235,7 @@ Testing in this application was made manually, defensive code was also added so 
  # Test Validators :
 
 ## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages passes with irelevant errors and warnings
- -Besides id duplication, the Home page didn't get any relevant HTML errors
+ - Besides id duplication, None relevant html errors
  
  ## [HTML Validator - landing](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2F)
  ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
