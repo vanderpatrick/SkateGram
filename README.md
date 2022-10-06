@@ -112,6 +112,11 @@ The Features were designed to distinguish each area with ease so the user can ex
     - user can check older posts through pagination
    
 ![Pagination image](/static/images/pagination.png)
+
+- Team Content
+    - Team content is a apart section thats only used by the Skategram Team. Here the user can get access to information provided by the application team
+   
+![admin content image](/static/images/admin-content.png)
 # Future Features :
  - User profile visiting
     
