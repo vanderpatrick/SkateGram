@@ -1,4 +1,4 @@
-from .models import Post, TutorialPost, Profile, Comment
+from .models import Post, TeamPost, Profile, Comment
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
@@ -177,8 +177,8 @@ def LikeView(request, pk):
 # List of all tutorials in the application
 
 
-class TutorialListView(ListView):
-    model = TutorialPost
+class TeamPostsListView(ListView):
+    model = TeamPost
     template_name = "tutorials.html"
     context_object_name = "tutorial"
     ordering = ["-created_on"]
@@ -187,7 +187,7 @@ class TutorialListView(ListView):
 # Details of tutorial posts
 
 
-class TutorialDetailView(DetailView):
-    model = TutorialPost
-    template_name = "tutorial_detail.html"
+class TeamPostDetail(DetailView):
+    model = TeamPost
+    template_name = "team_detail.html"
     context_object_name = "p"

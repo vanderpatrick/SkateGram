@@ -35,7 +35,7 @@ class Post(models.Model):
 # Model to handle Tutorial Post databases structure
 
 
-class TutorialPost(models.Model):
+class TeamPost(models.Model):
     title = models.CharField(max_length=200, unique=True)
     image = CloudinaryField("image")
     description = models.TextField()

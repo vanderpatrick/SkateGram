@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment, TutorialPost, Profile
+from .models import Post, Comment, TeamPost, Profile
 # Register your models here.
 
 
@@ -8,5 +8,5 @@ from .models import Post, Comment, TutorialPost, Profile
 
 admin.site.register(Post)
 admin.site.register(Comment)
-admin.site.register(TutorialPost)
+admin.site.register(TeamPost)
 admin.site.register(Profile)
