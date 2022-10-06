@@ -249,14 +249,14 @@ Testing in this application was made manually, defensive code was also added so 
  - And a stray div error that occurs because of the {% if user.is_authenticated %} tag if I move the tag it brakes the code, so unfortunately we have this div issue
  
  ## [HTML Validator - landing](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2F)
- ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
- ## [HTML Validator - Team](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fskategram.herokuapp.com%2Fteam%2F#l59c22)
+ ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F31%2F)
+ ## [HTML Validator - Team](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fteam%2F)
  ## [HTML Validator - profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fprofile%2F)
  ## [HTML Validator - login](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Flogin%2F)
  ## [HTML Validator - logout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Flogout%2F)
  ## [HTML Validator - create post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2Fnew%2F)
  ## [HTML Validator - register](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fregister%2F)
- ## [HTML Validator - Team detail](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Ftutorial%2F5%2F)
+ ## [HTML Validator - Team detail](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fteam%2F7%2F)
 
 All Html pages have been tested and passed with no relevant errors
 
