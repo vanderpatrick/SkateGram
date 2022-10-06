@@ -239,7 +239,7 @@ Testing in this application was made manually, defensive code was also added so 
  
  # Test Validators :
 
-## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages pass with relevant errors and warnings
+## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages pass with only stray div error and Django register form error
  - AN Ul error is being displayed but unfortunately this is out of my hands because is a Django form which I don't have access
  - And a stray div error that occurs because of the {% if user.is_authenticated %} tag if I move the tag it brakes the code, so unfortunately we have this div issue
  
