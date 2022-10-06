@@ -274,8 +274,7 @@ The CSS file has been tested and passed with success.
 
 # Deployment :
  ## Remote Deployment (Heroku) :
-  - In the Heroku App repository go to Deploy.
-  ![Heroku deployment deploy page](/static/heroku-deployment-deploy.png)
+ 
 
   - Connect to your gihub repository by searching the chosen repository and click connect
   ![Heroku deployment reoisutiry search](/static/images/heroku-deployment-github.png)
