@@ -4,7 +4,7 @@
 
 ### [Check SkateGram](https://skategram.herokuapp.com/)
 
-![Responsive image from the project](/assets/images/responsive.png)
+![Responsive image from the project](/static/images/responsive.png)
 
 # SkateGram :
 
