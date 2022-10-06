@@ -2,7 +2,7 @@
 
 ## By Patrick Alexander Lucas Van Der Flier
 
-### [Check SkateGram]([https://vanderpatrick.github.io/The-Amazing-Quizaru/](https://skategram.herokuapp.com/))
+### [Check SkateGram](https://skategram.herokuapp.com/)
 
 ![Responsive image from the project](/assets/images/responsive.png)
 
