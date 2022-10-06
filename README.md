@@ -217,6 +217,13 @@ Testing in this application was made manually, defensive code was also added so 
 
  ![navigation bar image](/static/images/test-delete-pass.png)
  
+ 
+ # User storys :
+ ## For the users storys GitHuh and Miro were used, Github as a Kambam Board and miro as an mind map
+ 
+  ![navigation bar image](/static/images/kambam-board.png)
+ 
+ 
  # Test Validators :
 
 ## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax 
