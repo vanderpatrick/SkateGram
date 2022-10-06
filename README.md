@@ -164,18 +164,18 @@ Testing in this application was made manually, defensive code was also added so 
  ![LogOut image](/static/images/test-logut.png)
   
   - After
-  - This confirms that the user is no long allowed to see the contents of the page 
+  - This confirms that the user is no longer allowed to see the contents of the page 
 
  ![LogOut image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The user is allowed to like posts when liked shows the amount of likes on the page the like button becomes an unlike button reflecting directly to the database
+    - The user is allowed to like posts when liked shows the number of likes on the page the like button becomes an unlike button reflecting directly to the database
     - Before
 
  ![liking system image](/static/images/test-like.png)
   
   - After
-  - The admin panel highlights users that have likes a determined post as well as in the front end (see image below)
+  - The admin panel highlights users that have liked a determined post as well as in the front end (see image below)
 
  ![liking system image](/static/images/test-like-pass.png)
   - Unliking
@@ -225,8 +225,8 @@ Testing in this application was made manually, defensive code was also added so 
  
  
  # User stories:
- ## For the user's storys GitHuh and Miro were used, Github as a Kambam Board and miro as a Flow Chart
-  - The order of the issues was kind random, i tried to do it with a flow of work but circumstances made me redo the project a couple of times 
+ ## For the user's stories GitHuh and Miro were used, Github as a Kambam Board and miro as a Flow Chart
+  - The order of the issues was kind of random, I tried to do it with a flow of work but circumstances made me redo the project a couple of times 
   - GitHub kambarm board
 
  ![Kambam Board image](/static/images/kambam-board.png)
@@ -239,8 +239,9 @@ Testing in this application was made manually, defensive code was also added so 
  
  # Test Validators :
 
-## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages pass with irelevant errors and warnings
- - Besides id duplication, None relevant HTML errors
+## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages pass with relevant errors and warnings
+ - AN Ul error is being displayed but unfortunately this is out of my hands because is a Django form which I don't have access
+ - And a stray div error that occurs because of the {% if user.is_authenticated %} tag if I move the tag it brakes the code, so unfortunately we have this div issue
  
  ## [HTML Validator - landing](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2F)
  ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
@@ -288,7 +289,7 @@ The CSS file has been tested and passed with success.
    - After clicking view your site will be loaded 
   ![image of the project page](/static/images/heroku-deployment-done.png)
 ## How to fork :
-  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create a fork (random project image to show how to fork)
+  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create  fork (random project image to show how to fork)
   ![image of location from fork](/static/images/forking.png)
   - After "forking" wait while GitHub copies the repository into your profile.
   
