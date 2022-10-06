@@ -222,7 +222,8 @@ Testing in this application was made manually, defensive code was also added so 
  ## For the users storys GitHuh and Miro were used, Github as a Kambam Board and miro as an mind map
   - The order of the issues were kind random,i tried to do with a flow of work but cicustances maded me redo the project a couple times 
   - GitHub kambarm board
-  ![navigation bar image](/static/images/kambam-board.png)
+
+ ![navigation bar image](/static/images/kambam-board.png)
  
  
  # Test Validators :
