@@ -150,6 +150,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-profile.png)
   
   - After
+  - The profile in the admin panel proves that the creation of the profile works fine
 
  ![navigation bar image](/static/images/test-profile-pass.png)
  
@@ -170,6 +171,17 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-like.png)
   
   - After
+  - The admin panel high lights users that have likes a determined post aswell as in the front end (see image bellow)
+
+ ![navigation bar image](/static/images/test-like-pass.png)
+  - Unliking
+    - The user is also  allowd to unlike the posts reflecting directly to the database
+    - Before
+
+ ![navigation bar image](/static/images/test-like.png)
+  
+  - After
+  - The admin panel high lights users that have likes a determined post aswell as in the front end 
 
  ![navigation bar image](/static/images/test-like-pass.png)
  
