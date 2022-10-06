@@ -268,19 +268,21 @@ The CSS file has been tested and passed with success.
 
 
 # Deployment :
- ## Remote Deployment :
-  - In the GitHub repository go to settings.
-  ![image of the settings location](assets/images/settings.png)
+ ## Remote Deployment (Heroku) :
+  - In the Heroku App repository go to Deploy.
+  ![image of the settings location](static/heroku-deployment.png)
 
-  - In the settings tab click the page button.
+  - Connect to your gihub repository by searching the chosen repository and click connect
   ![Image of the page's location](assets/images/pages.png)
 
-  - Change the none button to the main.
+  - Chose the propre branch in the manual deployment and click deploy branch
   ![image of the "main" button location](/assets/images/branch.png)
   
-  - Click save and then check your link URL.
+  - Wait for the application to load and then click view 
   ![image of the project URL link](/assets/images/result.png)
-
+  
+   - After clicking view your site will be loaded 
+  ![image of the project URL link](/assets/images/result.png)
 ## How to fork :
   - In the repository, you want to fork, go to the upper right corner and click fork.
   ![image of location from fork](/assets/images/how_to_fork.png)
