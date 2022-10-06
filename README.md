@@ -66,7 +66,7 @@ The Features were designed to distinguish each area with ease so the user can ex
 ![info content image](/static/images/footer.png)
 
 - Home section
-    - Simple homepage for registered users to access the blog content which consists of a list of the most recent blog posts
+    - Simple homepage for registered users to access the blog content which consists of a list of the most recent blog posts.
     - The user cannot access the content of the blog without being registered, defensive code was applied to all content pages.
     - After the user becomes registered he is allowed to log in and see the contents of the application.
     - Pagination system that allows users to navigate to older posts.
@@ -88,33 +88,33 @@ The Features were designed to distinguish each area with ease so the user can ex
 ![Post detail image](/static/images/post-detail.png)
 
 - Post Deletion
-    - The user is allowed if authenticated to delete his post
+    - The user is allowed if authenticated to delete his post.
     
 ![Post Delete image](/static/images/deleting.png)
 
 - Log in 
-    - The user after registration can fill in a form to login into the blog
+    - The user after registration can fill in a form to login into the blog.
     
 ![Login image](/static/images/login.png)   
 
 - registration
-    - The user fills in a registration form that automatically creates a profile for such a user
+    - The user fills in a registration form that automatically creates a profile for such a user.
  
 ![registration image](/static/images/register.png)
 
 - Profile
-    - user can check and edit his profile info
-    - The profile comes with a default picture and description
+    - user can check and edit his profile info.
+    - The profile comes with a default picture and description.
 
 ![Profile image](/static/images/profile.png)
  
  - pagination
-    - user can check older posts through pagination
+    - user can check older posts through pagination.
    
 ![Pagination image](/static/images/pagination.png)
 
 - Team Content
-    - Team content is a apart section thats only used by the Skategram Team. Here the user can get access to information provided by the application team
+    - Team content is a apart section thats only used by the Skategram Team. Here the user can get access to information provided by the application team.
    
 ![admin content image](/static/images/admin-content.png)
 # Future Features :
@@ -126,118 +126,118 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 # Testing :
 
-Testing in this application was made manually, defensive code was also added so that only authenticated users are allowed to edit/delete his/her posts
+Testing in this application was made manually, defensive code was also added so that only authenticated users are allowed to edit/delete his/her posts.
 
 - Registration
-    - The registration form allows the user to create an account if filled correctly
-    - Before
+    - The registration form allows the user to create an account if filled correctly.
+    - Before.
 
  ![registration image](/static/images/test-registration.png)
   
-  - After
-  - The registration works as expected registering the user in the database and creating a profile automatically
+  - After.
+  - The registration works as expected registering the user in the database and creating a profile automatically.
 
  ![registration image](/static/images/test-registration-pass.png)
  
  - Log in
-    - After filling in the user credentials he is allowed to see the application content
-    - Before
-    - The navbar confirms that the user is logged in and has access to the contents of the website
+    - After filling in the user credentials he is allowed to see the application content.
+    - Before.
+    - The navbar confirms that the user is logged in and has access to the contents of the website.
 
  ![Login image](/static/images/test-login.png
-  - After
-  - the username followed by the profile confirms that the user is logged in giving access to the rest of the content to the user 
+  - After.
+  - the username followed by the profile confirms that the user is logged in giving access to the rest of the content to the user.
 
  ![Login image](/static/images/test-login-pass.png)
 
 
 - Profile
-    - The profile is immediately created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description
-    - Before
+    - The profile is immediately created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description.
+    - Before.
 
  ![Profile image](/static/images/test-profile.png)
   
-  - After
-  - The profile in the admin panel proves that the creation of the profile works fine
+  - After.
+  - The profile in the admin panel proves that the creation of the profile works fine.
 
  ![Profiler image](/static/images/test-profile-pass.png)
  
  - Logout
-    - Clicking on the logout button the user logout from his account 
-    - Before
+    - Clicking on the logout button the user logout from his account.
+    - Before.
 
  ![LogOut image](/static/images/test-logut.png)
   
-  - After
-  - This confirms that the user is no longer allowed to see the contents of the page 
+  - After.
+  - This confirms that the user is no longer allowed to see the contents of the page.
 
  ![LogOut image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The user is allowed to like posts when liked shows the number of likes on the page the like button becomes an unlike button reflecting directly to the database
-    - Before
+    - The user is allowed to like posts when liked shows the number of likes on the page the like button becomes an unlike button reflecting directly to the database.
+    - Before.
 
  ![liking system image](/static/images/test-like.png)
   
-  - After
-  - The admin panel highlights users that have liked a determined post as well as in the front end (see image below)
+  - After.
+  - The admin panel highlights users that have liked a determined post as well as in the front end (see image below).
 
  ![liking system image](/static/images/test-like-pass.png)
   - Unliking
-    - The user is also allowed to unlike the posts reflecting directly to the database
-    - Before
+    - The user is also allowed to unlike the posts reflecting directly to the database.
+    - Before.
 
  ![Unlikig image](/static/images/test-unlike.png)
   
-  - After
-  - The admin panel highlights users that have liked a determined post as well as in the front end 
+  - After.
+  - The admin panel highlights users that have liked a determined post as well as in the front end.
 
  ![Unlikig image](/static/images/test-unlike-pass.png)
  
  - Edit
-    - If the user is not happy with his post he is allowed to edit it
-    - Before
+    - If the user is not happy with his post he is allowed to edit it.
+    - Before.
 
  ![Editing image](/static/images/test-edit.png)
   
-  - After
-  - This confirms that the user has edited his post
+  - After.
+  - This confirms that the user has edited his post.
 
  ![Editing image](/static/images/test-edit-pass.png)
  
  - Create
-    - When logged in the user can create his posts
-    - Before
+    - When logged in the user can create his posts.
+    - Before.
 
  ![Creation image](/static/images/test-post-creation.png)
   
-  - After 
-  - This confirms that the creation functionality is working fine
+  - After.
+  - This confirms that the creation functionality is working fine.
 
  ![Creation image](/static/images/test-post-creation-pass.png)
  
  - Delete
-    - the user is also allowed to delete his posts in a dynamic way where all tables related to that post are also deleted(likes/comments)
-    - Before
+    - the user is also allowed to delete his posts in a dynamic way where all tables related to that post are also deleted(likes/comments).
+    - Before.
 
  ![Deleting image](/static/images/deleting.png)
   
-  - After
-  - In the admin panel we can see that the data over that post no longer exists which means the delete functionality works
+  - After.
+  - In the admin panel we can see that the data over that post no longer exists which means the delete functionality works.
   
 
  ![Deleting image](/static/images/test-delete-pass.png)
  
  
  # User stories:
- ## For the user's stories GitHuh and Miro were used, Github as a Kambam Board and miro as a Flow Chart
-  - The order of the issues was kind of random, I tried to do it with a flow of work but circumstances made me redo the project a couple of times 
-  - GitHub kambarm board
+ ## For the user's stories GitHuh and Miro were used, Github as a Kambam Board and miro as a Flow Chart.
+  - The order of the issues was kind of random, I tried to do it with a flow of work but circumstances made me redo the project a couple of times. 
+  - GitHub kambarm board.
 
  ![Kambam Board image](/static/images/kambam-board.png)
  
- - The Flow Chart was used to set the general direction that the code needed to go
-  - Miro Flow Chart
+ - The Flow Chart was used to set the general direction that the code needed to go.
+ - Miro Flow Chart.
 
  ![Miro Flow Chart image](/static/images/flowchart.png)
  
@@ -261,16 +261,16 @@ Testing in this application was made manually, defensive code was also added so 
 All Html pages have been tested and passed with no relevant errors
 
  ## [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fskategram.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
- - For responsiveness, this project was tested at the desktop level, laptops, tablets(iPad), and telephones, all screen sizes have shown responsiveness
+ - For responsiveness, this project was tested at the desktop level, laptops, tablets(iPad), and telephones, all screen sizes have shown responsiveness.
 
 The CSS file has been tested and passed with success.
 
 ## Bugs
-- The application had a lot of path bugs regarding the detail pages that were fixed using the post id as an integer 
-- Custom CSS was a major problem in this application because the classes just didn't want to work, it was fixed by the use of ID instead of regular classes which gave an unfortunate duplication of id's for the application
+- The application had a lot of path bugs regarding the detail pages that were fixed using the post id as an integer.
+- Custom CSS was a major problem in this application because the classes just didn't want to work, it was fixed by the use of ID instead of regular classes.
 
 ## lighthouse
-- The rating of the application was acceptable with a good performance rating
+- The rating of the application was acceptable with a good performance rating.
 
 ![Light House image](/static/images/light-house.png)
 
@@ -279,19 +279,19 @@ The CSS file has been tested and passed with success.
  ## Remote Deployment (Heroku) :
  
 
-  - Connect to your GitHub repository by searching the chosen repository and clicking connect
+  - Connect to your GitHub repository by searching the chosen repository and clicking connect.
   ![Heroku deployment registry search](/static/images/heroku-deployment-github.png)
 
-  - Chose the proper branch in the manual deployment and click deploy branch
+  - Chose the proper branch in the manual deployment and click deploy branch.
   ![Heroku manual deployment](/static/images/heroku-deployment-deploy-branch.png)
   
-  - Wait for the application to load and then click view 
+  - Wait for the application to load and then click view.
   ![Heroku deployment loading](/static/images/heroku-deployment-view.png)
   
-   - After clicking view your site will be loaded 
+   - After clicking view your site will be loaded.
   ![image of the project page](/static/images/heroku-deployment-done.png)
 ## How to fork :
-  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create  fork (random project image to show how to fork)
+  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create  fork. (random project image to show how to fork)
   ![image of location from fork](/static/images/forking.png)
   - After "forking" wait while GitHub copies the repository into your profile.
   
@@ -310,13 +310,13 @@ The CSS file has been tested and passed with success.
 - [Font Awesome](https://fontawesome.com/)
   - Was used to select the icons used in this project. 
 - [Bootstrap](https://getbootstrap.com/)
-  - Bootstrap was used as the CSS framework for this project 
+  - Bootstrap was used as the CSS framework for this project. 
   # Credits :
  1. [MDBoostrap](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
-  - For providing the footer code
+  - For providing the footer code.
 
  2. [Codemy](https://www.youtube.com/c/CodingNepal/featured)
-  - For providing insight into the creation of the profile and comment section
+  - For providing insight into the creation of the profile and comment section.
   
  3.  [Code Institute](https://codeinstitute.net/)
   - Code Institute for all the support and care for me and my projects.
@@ -326,4 +326,4 @@ The CSS file has been tested and passed with success.
 
 - My mentor.
 - Code Institute for giving the best support to develop this project.
-- And all friends involved with helping this project 
+- And all friends involved with helping this project. 
