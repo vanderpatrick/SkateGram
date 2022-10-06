@@ -109,7 +109,7 @@ The Features were designed to distinguish each area with ease so the user can ex
 ![Footer image](/static/images/profile.png)
  
  - pagination
-    - user can check older posts trhouhght  pagination
+    - user can check older posts through pagination
    
 ![Footer image](/static/images/pagination.png)
 # Future Features :
@@ -121,33 +121,33 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 # Testing :
 
-Testing in this application was made manually, defensive code was also added so only authenticated users are allowed to edit/delete his/her posts
+Testing in this application was made manually, defensive code was also added so that only authenticated users are allowed to edit/delete his/her posts
 
 - Registration
-    - The registraion form allows the user to create an account if filled correctly
+    - The registration form allows the user to create an account if filled correctly
     - Before
 
  ![registration image](/static/images/test-registration.png)
   
   - After
-  - The registration works as expected registrating the user in the database and creating a profile automaticly
+  - The registration works as expected registering the user in the database and creating a profile automatically
 
  ![registration image](/static/images/test-registration-pass.png)
  
  - Log in
-    - After filling the user credentials he is allowd to see the application content
+    - After filling in the user credentials he is allowed to see the application content
     - Before
     - The navbar confirms that the user is logged in and has access to the contents of the website
 
  ![Login image](/static/images/test-login.png
   - After
-  - the username followed by the profile confirms that the user is logged in giving acces to the rest of the content to the user 
+  - the username followed by the profile confirms that the user is logged in giving access to the rest of the content to the user 
 
  ![Login image](/static/images/test-login-pass.png)
 
 
 - Profile
-    - The profile is imidiattly created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description
+    - The profile is immediately created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description
     - Before
 
  ![Profile image](/static/images/test-profile.png)
@@ -158,61 +158,61 @@ Testing in this application was made manually, defensive code was also added so 
  ![Profiler image](/static/images/test-profile-pass.png)
  
  - Logout
-    - Clicking in the logout button the user is logout from his account 
+    - Clicking on the logout button the user logout from his account 
     - Before
 
  ![LogOut image](/static/images/test-logut.png)
   
   - After
-  - This confirms that the user is no long alowed to see the contents of the page 
+  - This confirms that the user is no long allowed to see the contents of the page 
 
  ![LogOut image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The user is allowd to like posts when liked showing the amount of likes in the page the like button becomes a unlike button reflecting directly to the database
+    - The user is allowed to like posts when liked shows the amount of likes on the page the like button becomes an unlike button reflecting directly to the database
     - Before
 
  ![liking system image](/static/images/test-like.png)
   
   - After
-  - The admin panel high lights users that have likes a determined post aswell as in the front end (see image bellow)
+  - The admin panel highlights users that have likes a determined post as well as in the front end (see image below)
 
  ![liking system image](/static/images/test-like-pass.png)
   - Unliking
-    - The user is also  allowd to unlike the posts reflecting directly to the database
+    - The user is also allowed to unlike the posts reflecting directly to the database
     - Before
 
  ![Unlikig image](/static/images/test-unlike.png)
   
   - After
-  - The admin panel high lights users that have likes a determined post aswell as in the front end 
+  - The admin panel highlights users that have liked a determined post as well as in the front end 
 
  ![Unlikig image](/static/images/test-unlike-pass.png)
  
  - Edit
-    - If the user is not happy with his post he is allowd to edit it
+    - If the user is not happy with his post he is allowed to edit it
     - Before
 
  ![Editing image](/static/images/test-edit.png)
   
   - After
-  - This confirms that the user has edited his own post
+  - This confirms that the user has edited his post
 
  ![Editing image](/static/images/test-edit-pass.png)
  
  - Create
-    - When logged in the user is able to create his own posts
+    - When logged in the user can create his posts
     - Before
 
  ![Creation image](/static/images/test-post-creation.png)
   
   - After 
-  - This confirms that the cration functionality is working fine
+  - This confirms that the creation functionality is working fine
 
  ![Creation image](/static/images/test-post-creation-pass.png)
  
  - Delete
-    - the user is also allowd to delete his posts in a dinamic way where all tables related to that post is also deleted(likes/comments)
+    - the user is also allowed to delete his posts in a dynamic way where all tables related to that post are also deleted(likes/comments)
     - Before
 
  ![Deleting image](/static/images/deleting.png)
@@ -224,9 +224,9 @@ Testing in this application was made manually, defensive code was also added so 
  ![Deleting image](/static/images/test-delete-pass.png)
  
  
- # User storys :
- ## For the users storys GitHuh and Miro were used, Github as a Kambam Board and miro as an Flow Chart
-  - The order of the issues were kind random,i tried to do with a flow of work but cicustances maded me redo the project a couple times 
+ # User stories:
+ ## For the user's storys GitHuh and Miro were used, Github as a Kambam Board and miro as a Flow Chart
+  - The order of the issues was kind random, i tried to do it with a flow of work but circumstances made me redo the project a couple of times 
   - GitHub kambarm board
 
  ![Kambam Board image](/static/images/kambam-board.png)
@@ -239,8 +239,8 @@ Testing in this application was made manually, defensive code was also added so 
  
  # Test Validators :
 
-## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages passes with irelevant errors and warnings
- - Besides id duplication, None relevant html errors
+## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages pass with irelevant errors and warnings
+ - Besides id duplication, None relevant HTML errors
  
  ## [HTML Validator - landing](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2F)
  ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
@@ -276,10 +276,10 @@ The CSS file has been tested and passed with success.
  ## Remote Deployment (Heroku) :
  
 
-  - Connect to your gihub repository by searching the chosen repository and click connect
-  ![Heroku deployment reoisutiry search](/static/images/heroku-deployment-github.png)
+  - Connect to your GitHub repository by searching the chosen repository and clicking connect
+  ![Heroku deployment registry search](/static/images/heroku-deployment-github.png)
 
-  - Chose the propre branch in the manual deployment and click deploy branch
+  - Chose the proper branch in the manual deployment and click deploy branch
   ![Heroku manual deployment](/static/images/heroku-deployment-deploy-branch.png)
   
   - Wait for the application to load and then click view 
@@ -288,16 +288,16 @@ The CSS file has been tested and passed with success.
    - After clicking view your site will be loaded 
   ![image of the project page](/static/images/heroku-deployment-done.png)
 ## How to fork :
-  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create fork (random project image to show how to fork)
+  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create a fork (random project image to show how to fork)
   ![image of location from fork](/static/images/forking.png)
   - After "forking" wait while GitHub copies the repository into your profile.
   
 ## Desktop Deployment :
   - In the repository click on code.
-  ![Code button from github repository](/static/images/git-code.png)
+  ![Code button from GitHub repository](/static/images/git-code.png)
   - Click on a download zip file.
   - When that is done, open with your chosen code program and download the requirements.txt with the commend.
-  - pip install -r requirements.txt . 
+  - pip install -r requirements.txt. 
 
   # External Features :
   ### In the links below, you will find all the icons and fonts used in the project. 
@@ -307,7 +307,7 @@ The CSS file has been tested and passed with success.
 - [Font Awesome](https://fontawesome.com/)
   - Was used to select the icons used in this project. 
 - [Bootstrap](https://getbootstrap.com/)
-  - Bootstrap was used as the css framework for this project 
+  - Bootstrap was used as the CSS framework for this project 
   # Credits :
  1. [MDBoostrap](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
   - For providing the footer code
