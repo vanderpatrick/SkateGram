@@ -219,7 +219,7 @@ Testing in this application was made manually, defensive code was also added so 
  
  
  # User storys :
- ## For the users storys GitHuh and Miro were used, Github as a Kambam Board and miro as an mind map
+ ## For the users storys GitHuh and Miro were used, Github as a Kambam Board and miro as an Flow Chart
   - The order of the issues were kind random,i tried to do with a flow of work but cicustances maded me redo the project a couple times 
   - GitHub kambarm board
 
