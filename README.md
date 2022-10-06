@@ -120,7 +120,7 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 # Testing :
 
-This is a Full stack Framework project using Django
+Testing in this application was made manually, defensive code was also added so only authenticated users are allowed to edit/delete his/her posts
 
 - Registration
     - The registraion form allows the user to create an account if filled correctly
@@ -165,7 +165,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The user is allowd to like posts reflecting directly to the database
+    - The user is allowd to like posts when liked the like button becomes a unlike button reflecting directly to the database
     - Before
 
  ![navigation bar image](/static/images/test-like.png)
@@ -178,20 +178,21 @@ This is a Full stack Framework project using Django
     - The user is also  allowd to unlike the posts reflecting directly to the database
     - Before
 
- ![navigation bar image](/static/images/test-like.png)
+ ![navigation bar image](/static/images/test-unlike.png)
   
   - After
   - The admin panel high lights users that have likes a determined post aswell as in the front end 
 
- ![navigation bar image](/static/images/test-like-pass.png)
+ ![navigation bar image](/static/images/test-unlike-pass.png)
  
  - Edit
-    - If the user is not happy with his post he is allowd to edit it 
+    - If the user is not happy with his post he is allowd to edit it
     - Before
 
  ![navigation bar image](/static/images/test-edit.png)
   
   - After
+  - This confirms that the user has edited his own post
 
  ![navigation bar image](/static/images/test-edit-pass.png)
  
@@ -206,12 +207,13 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-post-creation-pass.png)
  
  - Delete
-    - the user is also allowd to delete his posts in a dinamic way where all tables related to that post is also deleted(likes/comments
+    - the user is also allowd to delete his posts in a dinamic way where all tables related to that post is also deleted(likes/comments)
     - Before
 
  ![navigation bar image](/static/images/deleting.png)
   
   - After
+  
 
  ![navigation bar image](/static/images/test-delete-pass.png)
  
