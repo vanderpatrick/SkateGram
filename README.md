@@ -183,15 +183,35 @@ This is a Full stack Framework project using Django
 
  ![navigation bar image](/static/images/test-edit-pass.png)
  
- - Edit
+ - Create
     - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
 
- ![navigation bar image](/static/images/test-edit.png)
+ ![navigation bar image](/static/images/test-post-creation.png)
   
   - After
 
- ![navigation bar image](/static/images/test-edit-pass.png)
+ ![navigation bar image](/static/images/test-post-creation-pass.png)
+ 
+ - Delete
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/deleting.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-delete-pass.png)
+ 
+ - unlike
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-unlike.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-unlike-pass.png)
  
  - unlike
     - The navigation bar is featured on all HTML pages using the extend method from Django.
