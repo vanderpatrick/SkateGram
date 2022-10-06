@@ -157,7 +157,7 @@ This is a Full stack Framework project using Django
     - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
 
- ![navigation bar image](/static/images/test-profile.png)
+ ![navigation bar image](/static/images/test-logout.png)
   
   - After
 
