@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/volendam/image/upload/v1665090814/favicon_rtblqk.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/volendam/image/upload/v1665090814/favicon_rtblqk.ico">
     <title>Skategram</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+Mono:wght@300&display=swap"
         rel="stylesheet">
@@ -57,7 +56,7 @@
                         </li>
                     </ul>
                     {% else %}
-                    <a class="navbar-brand" href="{% url 'landing' %}">Skategram</a>
+                    <a class="navbar-brand mx-2" href="{% url 'landing' %}">Skategram</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +68,7 @@
                                 <a class="nav-link active" aria-current="page" href="{% url 'landing' %}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'landing' %}">Tutorial Posts</a>
+                                <a class="nav-link" href="{% url 'landing' %}">Team posts</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-auto m-2">
@@ -83,8 +82,8 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
         </nav>
-        {% endif %}
     </header>
     <!-- Main Content containing all posts -->
     <div class="container">
