@@ -140,18 +140,68 @@ This is a Full stack Framework project using Django
   
   - After
 
- ![navigation bar image](/static/images/test-login-pass.png)
+ ![navigation bar image](/static/images/test-login-pass(1).png)
 
 
-- Registration
+- Profile
     - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
 
- ![navigation bar image](/static/images/test-registration.png)
+ ![navigation bar image](/static/images/test-profile.png)
   
   - After
 
- ![navigation bar image](/static/images/test-registration.png)
+ ![navigation bar image](/static/images/test-profile-pass.png)
+ 
+ - Logout
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-profile.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-logout-pass.png)
+ 
+ - Liking
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-like.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-like-pass.png)
+ 
+ - Edit
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-edit.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-edit-pass.png)
+ 
+ - Edit
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-edit.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-edit-pass.png)
+ 
+ - unlike
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Before
+
+ ![navigation bar image](/static/images/test-unlike.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-unlike-pass.png)
 
 
  
