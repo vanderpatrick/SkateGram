@@ -140,7 +140,7 @@ This is a Full stack Framework project using Django
   
   - After
 
- ![navigation bar image](/static/images/test-login-pass (1).png)
+ ![navigation bar image](/static/images/test-login-pass.png)
 
 
 - Profile
