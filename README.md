@@ -71,47 +71,47 @@ The Features were designed to distinguish each area with ease so the user can ex
     - After the user becomes registered he is allowed to log in and see the contents of the application.
     - Pagination system that allows users to navigate to older posts.
 
-![feedback info image](/static/images/navbar.png)
+![Navbar image](/static/images/navbar.png)
 
 
 - Post Creation
     - The user is allowed after becoming registered to create a post that consists of a unique title, a post image, and the contents of the post.
     - After submitting, the user is redirected to the home page with his post as the first one.
 
-![Footer image](/static/images/post-creation.png)
+![Post creation image](/static/images/post-creation.png)
 
 - Post detail
     - From the home page the user can click on a post of his choice.
     - There the user can read the content of the post, like the post unlike the post, and or comment on the post.
     - If the user is the owner of the post he is allowed to choose between deleting and editing the post 
  
-![Footer image](/static/images/post-detail.png)
+![Post detail image](/static/images/post-detail.png)
 
 - Post Deletion
     - The user is allowed if authenticated to delete his post
     
-![Footer image](/static/images/deleting.png)
+![Post Delete image](/static/images/deleting.png)
 
 - Log in 
     - The user after registration can fill in a form to login into the blog
     
-![Footer image](/static/images/login.png)   
+![Login image](/static/images/login.png)   
 
 - registration
     - The user fills in a registration form that automatically creates a profile for such a user
  
-![Footer image](/static/images/register.png)
+![registration image](/static/images/register.png)
 
 - Profile
     - user can check and edit his profile info
     - The profile comes with a default picture and description
 
-![Footer image](/static/images/profile.png)
+![Profile image](/static/images/profile.png)
  
  - pagination
     - user can check older posts through pagination
    
-![Footer image](/static/images/pagination.png)
+![Pagination image](/static/images/pagination.png)
 # Future Features :
  - User profile visiting
     
