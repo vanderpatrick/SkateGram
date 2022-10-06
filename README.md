@@ -265,7 +265,7 @@ The CSS file has been tested and passed with success.
 ## lighthouse
 - The rating of the application was acceptable with a good performance rating
 
-![JavaScript Validator](/assets/images/light_house.png)
+![JavaScript Validator](/static/images/light-house.png)
 
 
 # Deployment :
