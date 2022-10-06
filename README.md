@@ -229,7 +229,7 @@ Testing in this application was made manually, defensive code was also added so 
  - The Flow Chart was used to set the general direction that the code needed to go
   - Miro Flow Chart
 
- ![Kambam board image](/static/images/flowchart.png)
+ ![Miro Flow Chart image](/static/images/flowchart.png)
  
  
  # Test Validators :
