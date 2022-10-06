@@ -11,7 +11,7 @@
 ### SkateGram was developed as my fourth project for CodeInstitute
 
 # Reason :
-As a skateboarder, I have always been part of the skate community. Being part of a skate community means supporting and sharing, we always help each other by teaching tricks giving tips, etc... One of the main things that I saw was the dependence on social media platforms for this (Support/Sharing) experience, but it gets overwelming with the number of different subjects in such platforms hence the birth of skategram. a skate social media blog where people can share their thoughts about the skate universe as well as follow tutorials regarding skateboarding.
+As a skateboarder, I have always been part of the skate community. Being part of a skate community means supporting and sharing, we always help each other by teaching tricks giving tips, etc... One of the main things that I saw was the dependence on social media platforms for this (Support/Sharing) experience, but it gets overwhelming with the number of different subjects in such platforms hence the birth of skategram. a skate social media blog where people can share their thoughts about the skate universe as well as follow tutorials regarding skateboarding.
 
 # The User Experience (UX)
 
@@ -96,6 +96,13 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 - Profile
     - user can check and edit his profile info
+ 
+# Future Features :
+ - User profile visiting
+    
+ - Upvoting comments
+    
+ - Deleting and adding comments
 
 # Testing :
 
