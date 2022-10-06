@@ -123,7 +123,7 @@ The Features were designed to distinguish each area with ease so the user can ex
 This is a Full stack Framework project using Django
 
 - Registration
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - The registraion form allows the user to create an account if filled correctly
     - Before
 
  ![navigation bar image](/static/images/test-registration.png)
@@ -133,7 +133,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-registration-pass.png)
  
  - Log in
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - After filling the user credentials he is allowd to see the application content
     - Before
 
  ![navigation bar image](/static/images/test-login.png)
@@ -144,7 +144,7 @@ This is a Full stack Framework project using Django
 
 
 - Profile
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - The profile is imidiattly created with the account registration. Pretty neat if you ask me 
     - Before
 
  ![navigation bar image](/static/images/test-profile.png)
@@ -154,17 +154,17 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-profile-pass.png)
  
  - Logout
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - Clicking in the logout button the user is logout from his account 
     - Before
 
- ![navigation bar image](/static/images/test-logout.png)
+ ![navigation bar image](/static/images/test-logut.png)
   
   - After
 
  ![navigation bar image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - The user is allowd to like posts reflecting directly to the database
     - Before
 
  ![navigation bar image](/static/images/test-like.png)
@@ -174,7 +174,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-like-pass.png)
  
  - Edit
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - If the user is not happy with his post he is allowd to edit it 
     - Before
 
  ![navigation bar image](/static/images/test-edit.png)
@@ -184,7 +184,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-edit-pass.png)
  
  - Create
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - When logged in the user is able to create his own posts
     - Before
 
  ![navigation bar image](/static/images/test-post-creation.png)
@@ -194,7 +194,7 @@ This is a Full stack Framework project using Django
  ![navigation bar image](/static/images/test-post-creation-pass.png)
  
  - Delete
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
+    - the user is also allowd to delete his posts in a dinamic way where all tables related to that post is also deleted(likes/comments
     - Before
 
  ![navigation bar image](/static/images/deleting.png)
@@ -203,32 +203,6 @@ This is a Full stack Framework project using Django
 
  ![navigation bar image](/static/images/test-delete-pass.png)
  
- - unlike
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
-    - Before
-
- ![navigation bar image](/static/images/test-unlike.png)
-  
-  - After
-
- ![navigation bar image](/static/images/test-unlike-pass.png)
- 
- - unlike
-    - The navigation bar is featured on all HTML pages using the extend method from Django.
-    - Before
-
- ![navigation bar image](/static/images/test-unlike.png)
-  
-  - After
-
- ![navigation bar image](/static/images/test-unlike-pass.png)
-
-
- 
-
-
-
-
  # Test Validators :
 
 ## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax 
