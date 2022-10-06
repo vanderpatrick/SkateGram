@@ -137,6 +137,7 @@ Testing in this application was made manually, defensive code was also added so 
  - Log in
     - After filling the user credentials he is allowd to see the application content
     - Before
+    - The navbar confirms that the user is logged in and has access to the contents of the website
 
  ![Login image](/static/images/test-login.png
   - After
