@@ -51,7 +51,7 @@ The Features were designed to distinguish each area with ease so the user can ex
     - It consists of intuitive links that tell you precisely what you can do in the application. 
     - as it shrinks the navigations become the brand title and a burger menu.
 
- ![navigation bar image](/assets/images/nav_bar.png)
+ ![navigation bar image](/static/images/navbar.png)
 
 - Landing page
     - The homepage consists of a welcome message with options of register/login for new and old users.
