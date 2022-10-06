@@ -57,13 +57,13 @@ The Features were designed to distinguish each area with ease so the user can ex
     - The homepage consists of a welcome message with options of register/login for new and old users.
     - it is easy to look at and intuitive to choose what to do.
 
-![landing page image](/static/images/navbar.png)
+![landing page image](/static/images/landing.png)
 
 - Footer
     - The footer is responsible for giving information about the development of the application and contact info about the development team.
-    
+ 
 
-![info content image](/static/images/navbar.png)
+![info content image](/static/images/footer.png)
 
 - Home section
     - Simple homepage for registered users to access the blog content which consists of a list of the most recent blog posts
@@ -78,26 +78,39 @@ The Features were designed to distinguish each area with ease so the user can ex
     - The user is allowed after becoming registered to create a post that consists of a unique title, a post image, and the contents of the post.
     - After submitting, the user is redirected to the home page with his post as the first one.
 
-![Footer image](/static/images/navbar.png)
+![Footer image](/static/images/post-creation.png)
 
 - Post detail
     - From the home page the user can click on a post of his choice.
     - There the user can read the content of the post, like the post unlike the post, and or comment on the post.
     - If the user is the owner of the post he is allowed to choose between deleting and editing the post 
-![Footer image](/static/images/navbar.png)
+ 
+![Footer image](/static/images/post-detail.png)
 
 - Post Deletion
     - The user is allowed if authenticated to delete his post
-![Footer image](/static/images/navbar.png)
+    
+![Footer image](/static/images/deleting.png)
+
 - Log in 
     - The user after registration can fill in a form to login into the blog
-![Footer image](/static/images/navbar.png)   
+    
+![Footer image](/static/images/login.png)   
+
 - registration
     - The user fills in a registration form that automatically creates a profile for such a user
-![Footer image](/static/images/navbar.png)
+ 
+![Footer image](/static/images/register.png)
+
 - Profile
     - user can check and edit his profile info
-![Footer image](/static/images/navbar.png) 
+
+![Footer image](/static/images/profile.png)
+ 
+ - pagination
+    - user can check and edit his profile info
+   
+![Footer image](/static/images/pagination.png)
 # Future Features :
  - User profile visiting
     
