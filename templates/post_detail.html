@@ -79,18 +79,5 @@
         <p class="text-light" id="text1"></p>
     </div>
 </div>
-<script>
-    function changeText() {
-        let text = document.getElementById("text1")
-        text.textContent = 'Yeah get snored'
-    }
-
-    function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-    }
-</script>
-
-<audio id="audio" src="{% static 'memesong.mp3' %}"></audio>
 {%endif%}
 {% endblock content %}

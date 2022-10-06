@@ -4,6 +4,8 @@ from django.dispatch import receiver
 from .models import Profile
 
 # signals to compile User(django) with Profile model
+
+
 @receiver(post_save, sender=User)
 def create_profile(sender, instance, created, **kwargs):
     if created:
