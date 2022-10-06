@@ -270,30 +270,30 @@ The CSS file has been tested and passed with success.
 # Deployment :
  ## Remote Deployment (Heroku) :
   - In the Heroku App repository go to Deploy.
-  ![image of the settings location](/static/heroku-deployment-deploy.png)
+  ![Heroku deployment deploy page](/static/heroku-deployment-deploy.png)
 
   - Connect to your gihub repository by searching the chosen repository and click connect
-  ![Image of the page's location](/static/images/heroku-deployment-github.png)
+  ![Heroku deployment reoisutiry search](/static/images/heroku-deployment-github.png)
 
   - Chose the propre branch in the manual deployment and click deploy branch
-  ![image of the "main" button location](/static/images/heroku-deployment-deploy-branch.png)
+  ![Heroku manual deployment](/static/images/heroku-deployment-deploy-branch.png)
   
   - Wait for the application to load and then click view 
-  ![image of the project URL link](/static/images/heroku-deployment-view.png)
+  ![Heroku deployment loading](/static/images/heroku-deployment-view.png)
   
    - After clicking view your site will be loaded 
-  ![image of the project URL link](/static/images/heroku-deployment-done.png)
+  ![image of the project page](/static/images/heroku-deployment-done.png)
 ## How to fork :
-  - In the repository, you want to fork, go to the upper right corner and click fork.
-  ![image of location from fork](/assets/images/how_to_fork.png)
+  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create fork
+  ![image of location from fork](/static/images/forking.png)
   - After "forking" wait while GitHub copies the repository into your profile.
   
 ## Desktop Deployment :
-  - In the repository click on code.
-  ![image of location from fork](/assets/images/desktop_deploy.png)
+  - In the repository click on code.(random project image to show how to fork)
+  ![Code button from github repository](/static/images/git-code.png)
   - Click on a download zip file.
-  ![image of location from fork](/assets/images/desktop_deploy_part_1.png)
-  - When that is done, open with your chosen code program. 
+  - When that is done, open with your chosen code program and download the requirements.txt with the commend.
+  - pip install -r requirements.txt . 
 
   # External Features :
   ### In the links below, you will find all the icons and fonts used in the project. 
@@ -302,7 +302,8 @@ The CSS file has been tested and passed with success.
   - Was used to select the font combination for this project.
 - [Font Awesome](https://fontawesome.com/)
   - Was used to select the icons used in this project. 
-
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap was used as the css framework for this project 
   # Credits :
  1. [MDBoostrap](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
   - For providing the footer code
