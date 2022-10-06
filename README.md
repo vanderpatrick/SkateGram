@@ -122,52 +122,41 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 This is a Full stack Framework project using Django
 
- - The testing in this project was made by manually testing every single functionality 
-
- - It was hard to fix the Js bugs in all HTML pages. But in the end, it passed all tests.
-
-
-- registration
+- Registration
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
-    -![Footer image](/assets/images/quiz_result.png)
-    -After
-    ![Footer image](/assets/images/quiz_result.png)
 
--  log in
+ ![navigation bar image](/static/images/test-registration.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-registration-pass.png)
+ 
+ - Log in
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
-    -![Footer image](/assets/images/quiz_result.png)
-    - After
-    -![Footer image](/assets/images/quiz_result.png)
 
-- Post creation
-    - before
-    -![Footer image](/assets/images/quiz_result.png)
-    - after
-    -![Footer image](/assets/images/quiz_result.png)
+ ![navigation bar image](/static/images/test-login.png)
+  
+  - After
 
-- Post Editing
-    -before
-    ![Footer image](/assets/images/quiz_result.png)
-    - after
-    -![Footer image](/assets/images/quiz_result.png)
-    
-- Post Editing
-    -Before
-    -![Footer image](/assets/images/quiz_result.png)
-    -after
-    -![Footer image](/assets/images/quiz_result.png)
-    
-- Post deleting
+ ![navigation bar image](/static/images/test-login-pass.png)
+
+
+- Registration
+    - The navigation bar is featured on all HTML pages using the extend method from Django.
     - Before
-    -![Footer image](/assets/images/quiz_result.png)
-    - after
-    -![Footer image](/assets/images/quiz_result.png)
 
-- Profile editing
-    -before
-    ![Footer image](/assets/images/quiz_result.png)
-    -after
-    -![Footer image](/assets/images/quiz_result.png)
+ ![navigation bar image](/static/images/test-registration.png)
+  
+  - After
+
+ ![navigation bar image](/static/images/test-registration.png)
+
+
+ 
+
+
 
 
  # Test Validators :
