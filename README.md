@@ -225,6 +225,11 @@ Testing in this application was made manually, defensive code was also added so 
 
  ![navigation bar image](/static/images/kambam-board.png)
  
+ - The Flow Chart was used to set the general direction that the code needed to go
+  - GitHub kambarm board
+
+ ![navigation bar image](/static/images/flowchart.png)
+ 
  
  # Test Validators :
 
