@@ -29,10 +29,10 @@
 <body class="d-flex flex-column min-vh-100">
     <!-- Header section containing all navigation content -->
     <header>
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark text-light">
-            <div class="container-fluid" id="acme-font">
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark text-light" id="acme-font">
+            <div class="container-fluid">
                 {% if user.is_authenticated %}
-                <a class="navbar-brand"  href="{% url 'home' %}">Skategram</a>
+                <a class="navbar-brand" href="{% url 'home' %}">Skategram</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -41,28 +41,26 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active"  aria-current="page"
-                                href="{% url 'home' %}">Home</a>
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="{% url 'team-post' %}">Team posts</a>
+                            <a class="nav-link" href="{% url 'team-post' %}">Team posts</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto m-2">
                         <li class="nav-item">
-                            <a class="nav-link active"  aria-current="page"
-                                href="{% url 'logout' %}">Logout</a>
+                            <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="{% url 'profile' %}">{{ user.username }} |
+                            <a class="nav-link" href="{% url 'profile' %}">{{ user.username }} |
                                 Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="{% url 'post-create' %}">Create a Post</a>
+                            <a class="nav-link" href="{% url 'post-create' %}">Create a Post</a>
                         </li>
                     </ul>
                     {% else %}
-                    <a class="navbar-brand"  href="{% url 'landing' %}">Skategram</a>
+                    <a class="navbar-brand" href="{% url 'landing' %}">Skategram</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -71,24 +69,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active"  aria-current="page"
-                                    href="{% url 'landing' %}">Home</a>
+                                <a class="nav-link active" aria-current="page" href="{% url 'landing' %}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  href="{% url 'landing' %}">Tutorial Posts</a>
+                                <a class="nav-link" href="{% url 'landing' %}">Tutorial Posts</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-auto m-2">
                             <li class="nav-item">
-                                <a class="nav-link active"  aria-current="page"
-                                    href="{% url 'login' %}">Login</a>
+                                <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  href="{% url 'register'%}">Register</a>
+                                <a class="nav-link" href="{% url 'register'%}">Register</a>
                             </li>
                         </ul>
-                        {% endif %}
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </nav>

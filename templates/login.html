@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="container ">
+    <div class="container">
         <div class="col-md-12 pt-4 pb-4">
-            <form  method="POST" class="text-start  my-4">
+            <form  method="POST" class="text-start my-4">
                 {% csrf_token %}
                 <fieldset class="form-group">
-                    <legend class="border-bottom mb-4 text-light" id="acme-font">Welcome to skategram please fill the form to login</legend>
+                    <legend class="border-bottom mb-4 text-light" >Welcome to skategram please fill the form to login</legend>
                     <div class="text-light" id="noto-font">
                         {{ form|crispy }}
                     </div>
