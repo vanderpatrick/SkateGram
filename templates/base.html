@@ -19,19 +19,15 @@
     <script src="https://kit.fontawesome.com/b678a35cb2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <style>
-        body {
-            background-color: #234E5A;
-        }
-    </style>
+   
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Header section containing all navigation content -->
     <header>
+        {% if user.is_authenticated %}
         <nav class="navbar  navbar-expand-lg navbar-dark bg-dark text-light" id="acme-font">
             <div class="container-fluid">
-                {% if user.is_authenticated %}
                 <a class="navbar-brand" href="{% url 'home' %}">Skategram</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -84,11 +80,11 @@
                             </li>
                         </ul>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </nav>
     </header>
-    {% endif %}
     <!-- Main Content containing all posts -->
     <div class="container">
         <div class="row">
