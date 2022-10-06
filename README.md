@@ -130,6 +130,7 @@ Testing in this application was made manually, defensive code was also added so 
  ![registration image](/static/images/test-registration.png)
   
   - After
+  - The registration works as expected registrating the user in the database and creating a profile automaticly
 
  ![registration image](/static/images/test-registration-pass.png)
  
@@ -139,7 +140,7 @@ Testing in this application was made manually, defensive code was also added so 
 
  ![Login image](/static/images/test-login.png
   - After
-  - the username followed by the profile confirms that the user is logged in
+  - the username followed by the profile confirms that the user is logged in giving acces to the rest of the content to the user 
 
  ![Login image](/static/images/test-login-pass.png)
 
@@ -162,11 +163,12 @@ Testing in this application was made manually, defensive code was also added so 
  ![LogOut image](/static/images/test-logut.png)
   
   - After
+  - This confirms that the user is no long alowed to see the contents of the page 
 
  ![LogOut image](/static/images/test-logout-pass.png)
  
  - Liking
-    - The user is allowd to like posts when liked the like button becomes a unlike button reflecting directly to the database
+    - The user is allowd to like posts when liked showing the amount of likes in the page the like button becomes a unlike button reflecting directly to the database
     - Before
 
  ![liking system image](/static/images/test-like.png)
@@ -203,7 +205,8 @@ Testing in this application was made manually, defensive code was also added so 
 
  ![Creation image](/static/images/test-post-creation.png)
   
-  - After
+  - After 
+  - This confirms that the cration functionality is working fine
 
  ![Creation image](/static/images/test-post-creation-pass.png)
  
@@ -214,6 +217,7 @@ Testing in this application was made manually, defensive code was also added so 
  ![Deleting image](/static/images/deleting.png)
   
   - After
+  - In the admin panel we can see that the data over that post no longer exists which means the delete functionality works
   
 
  ![Deleting image](/static/images/test-delete-pass.png)
