@@ -234,23 +234,21 @@ Testing in this application was made manually, defensive code was also added so 
  
  # Test Validators :
 
-## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax 
- 
- ## [HTML Validator - Base]([https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Findex.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fhome%2F))
+## Since this is a Full stack framework project The HTML validation comes with a couple of errors, that occur because of the inputs that Django gives us such inputs are not considered HTML syntax besides that all Html pages passes with irelevant errors and warnings
  -Besides id duplication, the Home page didn't get any relevant HTML errors
- ## [HTML Validator - landing](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fquiz_box.html#textarea)
- ## [HTML Validator - post](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fhelp.html#textarea)
- ## [HTML Validator - tutorial](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html)
- ## [HTML Validator - profile](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - login](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - logout](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - base](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - create post](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - post detail](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - post update](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - post delete](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - register](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
- ## [HTML Validator - tutorial detail](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fcredits.html#textarea)
+ 
+ ## [HTML Validator - landing]([https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fvanderpatrick.github.io%2FThe-Amazing-Quizaru%2Fquiz_box.html#textarea](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2F))
+ ## [HTML Validator - post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
+ ## [HTML Validator - tutorial](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Ftutorial%2F)
+ ## [HTML Validator - profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fprofile%2F)
+ ## [HTML Validator - login](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Flogin%2F)
+ ## [HTML Validator - logout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Flogout%2F)
+ ## [HTML Validator - create post](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2Fnew%2F)
+ ## [HTML Validator - post detail](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F21%2F)
+ ## [HTML Validator - post update](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F22%2Fedit%2F)
+ ## [HTML Validator - post delete](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fpost%2F22%2Fdelete%2F)
+ ## [HTML Validator - register](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Fregister%2F)
+ ## [HTML Validator - tutorial detail](https://validator.w3.org/nu/?doc=https%3A%2F%2Fskategram.herokuapp.com%2Ftutorial%2F5%2F)
 
 All Html pages have been tested and passed with no relevant errors
 
