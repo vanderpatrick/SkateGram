@@ -25,6 +25,7 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         .hover:hover {
             background-color: grey;
         }
@@ -62,6 +63,11 @@
             background-color: #555;
             color: white;
         }
+
+        p {
+            font-family: 'Acme', sans-serif;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 
@@ -69,10 +75,10 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1 id="noto-font" style="font-size:50px">Welcome To skateGram</h1>
-            <p id="acme-font">A place where you can see and share your skate content with other</p>
-            <p id="acme-font">You have to be loged in to access our content </p>
-            <a id="acme-font" class="btn m-2 p-2 hover" href="{% url 'register' %}">Click here to Register</a>
-            <a id="acme-font" class="btn m-2 p-2 hover" href="{% url 'login' %}">Click here to Login</a>
+            <p>A place where you can see and share your skate content with other</p>
+            <p>You have to be loged in to access our content </p>
+            <a class="btn m-2 p-2 hover" href="{% url 'register' %}">Click here to Register</a>
+            <a class="btn m-2 p-2 hover" href="{% url 'login' %}">Click here to Login</a>
         </div>
     </div>
 </body>
