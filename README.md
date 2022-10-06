@@ -104,11 +104,12 @@ The Features were designed to distinguish each area with ease so the user can ex
 
 - Profile
     - user can check and edit his profile info
+    - The profile comes with a default picture and description
 
 ![Footer image](/static/images/profile.png)
  
  - pagination
-    - user can check and edit his profile info
+    - user can check older posts trhouhght  pagination
    
 ![Footer image](/static/images/pagination.png)
 # Future Features :
@@ -126,96 +127,96 @@ Testing in this application was made manually, defensive code was also added so 
     - The registraion form allows the user to create an account if filled correctly
     - Before
 
- ![navigation bar image](/static/images/test-registration.png)
+ ![registration image](/static/images/test-registration.png)
   
   - After
 
- ![navigation bar image](/static/images/test-registration-pass.png)
+ ![registration image](/static/images/test-registration-pass.png)
  
  - Log in
     - After filling the user credentials he is allowd to see the application content
     - Before
 
- ![navigation bar image](/static/images/test-login.png
+ ![Login image](/static/images/test-login.png
   - After
   - the username followed by the profile confirms that the user is logged in
 
- ![navigation bar image](/static/images/test-login-pass.png)
+ ![Login image](/static/images/test-login-pass.png)
 
 
 - Profile
     - The profile is imidiattly created with the account registration. Pretty neat if you ask me he also comes with two default values one for the profile image and another for the description
     - Before
 
- ![navigation bar image](/static/images/test-profile.png)
+ ![Profile image](/static/images/test-profile.png)
   
   - After
   - The profile in the admin panel proves that the creation of the profile works fine
 
- ![navigation bar image](/static/images/test-profile-pass.png)
+ ![Profiler image](/static/images/test-profile-pass.png)
  
  - Logout
     - Clicking in the logout button the user is logout from his account 
     - Before
 
- ![navigation bar image](/static/images/test-logut.png)
+ ![LogOut image](/static/images/test-logut.png)
   
   - After
 
- ![navigation bar image](/static/images/test-logout-pass.png)
+ ![LogOut image](/static/images/test-logout-pass.png)
  
  - Liking
     - The user is allowd to like posts when liked the like button becomes a unlike button reflecting directly to the database
     - Before
 
- ![navigation bar image](/static/images/test-like.png)
+ ![liking system image](/static/images/test-like.png)
   
   - After
   - The admin panel high lights users that have likes a determined post aswell as in the front end (see image bellow)
 
- ![navigation bar image](/static/images/test-like-pass.png)
+ ![liking system image](/static/images/test-like-pass.png)
   - Unliking
     - The user is also  allowd to unlike the posts reflecting directly to the database
     - Before
 
- ![navigation bar image](/static/images/test-unlike.png)
+ ![Unlikig image](/static/images/test-unlike.png)
   
   - After
   - The admin panel high lights users that have likes a determined post aswell as in the front end 
 
- ![navigation bar image](/static/images/test-unlike-pass.png)
+ ![Unlikig image](/static/images/test-unlike-pass.png)
  
  - Edit
     - If the user is not happy with his post he is allowd to edit it
     - Before
 
- ![navigation bar image](/static/images/test-edit.png)
+ ![Editing image](/static/images/test-edit.png)
   
   - After
   - This confirms that the user has edited his own post
 
- ![navigation bar image](/static/images/test-edit-pass.png)
+ ![Editing image](/static/images/test-edit-pass.png)
  
  - Create
     - When logged in the user is able to create his own posts
     - Before
 
- ![navigation bar image](/static/images/test-post-creation.png)
+ ![Creation image](/static/images/test-post-creation.png)
   
   - After
 
- ![navigation bar image](/static/images/test-post-creation-pass.png)
+ ![Creation image](/static/images/test-post-creation-pass.png)
  
  - Delete
     - the user is also allowd to delete his posts in a dinamic way where all tables related to that post is also deleted(likes/comments)
     - Before
 
- ![navigation bar image](/static/images/deleting.png)
+ ![Deleting image](/static/images/deleting.png)
   
   - After
   
 
- ![navigation bar image](/static/images/test-delete-pass.png)
+ ![Deleting image](/static/images/test-delete-pass.png)
  
  
  # User storys :
@@ -223,12 +224,12 @@ Testing in this application was made manually, defensive code was also added so 
   - The order of the issues were kind random,i tried to do with a flow of work but cicustances maded me redo the project a couple times 
   - GitHub kambarm board
 
- ![navigation bar image](/static/images/kambam-board.png)
+ ![Kambam Board image](/static/images/kambam-board.png)
  
  - The Flow Chart was used to set the general direction that the code needed to go
   - Miro Flow Chart
 
- ![navigation bar image](/static/images/flowchart.png)
+ ![Kambam board image](/static/images/flowchart.png)
  
  
  # Test Validators :
@@ -265,7 +266,7 @@ The CSS file has been tested and passed with success.
 ## lighthouse
 - The rating of the application was acceptable with a good performance rating
 
-![JavaScript Validator](/static/images/light-house.png)
+![Light House image](/static/images/light-house.png)
 
 
 # Deployment :
