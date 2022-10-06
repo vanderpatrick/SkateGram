@@ -179,7 +179,7 @@ def LikeView(request, pk):
 
 class TeamPostsListView(ListView):
     model = TeamPost
-    template_name = "tutorials.html"
+    template_name = "team.html"
     context_object_name = "tutorial"
     ordering = ["-created_on"]
     paginate_by = 4
