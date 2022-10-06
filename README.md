@@ -288,12 +288,12 @@ The CSS file has been tested and passed with success.
    - After clicking view your site will be loaded 
   ![image of the project page](/static/images/heroku-deployment-done.png)
 ## How to fork :
-  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create fork
+  - In the repository, you want to fork, go to the upper right corner and click fork, then click in create fork (random project image to show how to fork)
   ![image of location from fork](/static/images/forking.png)
   - After "forking" wait while GitHub copies the repository into your profile.
   
 ## Desktop Deployment :
-  - In the repository click on code.(random project image to show how to fork)
+  - In the repository click on code.
   ![Code button from github repository](/static/images/git-code.png)
   - Click on a download zip file.
   - When that is done, open with your chosen code program and download the requirements.txt with the commend.
